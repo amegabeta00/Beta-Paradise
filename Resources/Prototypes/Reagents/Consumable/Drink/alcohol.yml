@@ -2,6 +2,30 @@
 # Base Alcohol
 
 - type: reagent
+  id: CargoGryzloder
+  name: reagent-name-cargo-dryzlodet
+  parent: BaseAlcohol
+  desc: reagent-desc-cargo-dryzloder
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: CargoGryzloder
+  color: "#d7d1d155"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/cargogryzloderglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.2
+  
+
+- type: reagent
   id: Absinthe
   name: reagent-name-absinthe
   parent: BaseAlcohol
