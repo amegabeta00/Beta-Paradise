@@ -10,7 +10,7 @@
   flavor: CargoGryzloder
   color: "#d7d1d155"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/cargogryzloderglass.rsi
+    sprite: Objects/Consumable/Drinks/beer.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
