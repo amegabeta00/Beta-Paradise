@@ -1,4 +1,21 @@
 - type: reaction
+  id: CargoGryzloder
+  reactants:
+    vodka:
+      amount: 1
+    Beer:
+      amount: 1
+    Gold:
+      amount: 1
+    Whiskey:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    Kvass:
+      amount: 1
+  products:
+   CargoGryzloder: 6
+- type: reaction
   id: AcidSpit
   reactants:
     Wine:
