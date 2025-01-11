@@ -1,6 +1,6 @@
 - type: entity
   parent: IDCardStandard
-  id: LPPSecurityEnginerIDCard
+  id: LPPSecurityEngineerIDCard
   name: security ID card
   components:
   - type: Sprite
@@ -12,7 +12,7 @@
       color: "#F39F27"
     - state: idsecurityenginer
   - type: PresetIdCard
-    job: LPPSecurityEnginer
+    job: LPPSecurityEngineer
 
 - type: entity
   parent: IDCardStandard
@@ -27,26 +27,25 @@
       groups:
       - AllAccess
 
-- type: entity
-  parent: IDCardStandard
-  id: LPPAdjutantIDCard
-  name: adjutant ID card
-  description: Adjutant ID card.
-  components:
-  - type: Sprite
-    layers:
-    - state: default
-    - state: departmenthead
-      color: "#1B67A5"
-    - state: subdepartment
-      color: "#1B67A5"
-    - state: idheadofpersonnel
-  - type: PresetIdCard
-    job: LPPAdjutant
+# - type: entity
+#   parent: IDCardStandard
+#   id: LPPAdjutantIDCard
+#   name: adjutant ID card
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: default
+#     - state: departmenthead
+#       color: "#1B67A5"
+#     - state: subdepartment
+#       color: "#1B67A5"
+#     - state: idheadofpersonnel
+#   - type: PresetIdCard
+#     job: LPPAdjutant
 
 - type: entity
   parent: IDCardStandard
-  id: ExpeditorIDCard
+  id: LPPExpeditorIDCard
   name: expeditor ID card
   components:
   - type: Sprite
@@ -62,9 +61,8 @@
 
 - type: entity
   parent: IDCardStandard
-  id: SecPilotIDCard
+  id: LPPSecPilotIDCard
   name: security pilot ID card
-  description: magistrate ID card
   components:
     - type: Sprite
       layers:

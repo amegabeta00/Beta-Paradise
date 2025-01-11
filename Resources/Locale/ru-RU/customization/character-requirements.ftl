@@ -9,12 +9,12 @@ character-department-requirement =
         [true] не быть
        *[other] быть
     } в одном из этих департаментов: { $departments }
-character-timer-department-insufficient = Вам нужно [color=yellow]{ TOSTRING($time, "0") }[/color] больше минут игры на [color={ $departmentColor }]{ $department }[/color] департаменте
-character-timer-department-too-high = Вам нужно [color=yellow]{ TOSTRING($time, "0") }[/color] меньше минут игры на [color={ $departmentColor }]{ $department }[/color] департаменте
-character-timer-overall-insufficient = Вам нужно [color=yellow]{ TOSTRING($time, "0") }[/color] больше общих минут игры
-character-timer-overall-too-high = Вам нужно [color=yellow]{ TOSTRING($time, "0") }[/color] меньше общих минут игры
-character-timer-role-insufficient = Вам нужно [color=yellow]{ TOSTRING($time, "0") }[/color] больше минут игры на [color={ $departmentColor }]{ $job }[/color]
-character-timer-role-too-high = Вам нужно [color=yellow] { TOSTRING($time, "0") }[/color] меньше минут игры на [color={ $departmentColor }]{ $job }[/color]
+character-timer-department-insufficient = Вам нужно на [color=yellow]{ TOSTRING($time, "0") }[/color] больше минут игры на [color={ $departmentColor }]{ $department }[/color] департаменте
+character-timer-department-too-high = Вам нужно на [color=yellow]{ TOSTRING($time, "0") }[/color] меньше минут игры на [color={ $departmentColor }]{ $department }[/color] департаменте
+character-timer-overall-insufficient = Вам нужно на [color=yellow]{ TOSTRING($time, "0") }[/color] больше общих минут игры
+character-timer-overall-too-high = Вам нужно на [color=yellow]{ TOSTRING($time, "0") }[/color] меньше общих минут игры
+character-timer-role-insufficient = Вам нужно на [color=yellow]{ TOSTRING($time, "0") }[/color] больше минут игры на [color={ $departmentColor }]{ $job }[/color]
+character-timer-role-too-high = Вам нужно на [color=yellow] { TOSTRING($time, "0") }[/color] меньше минут игры на [color={ $departmentColor }]{ $job }[/color]
 # Profile
 character-age-requirement =
     Вы должны { $inverted ->
@@ -41,7 +41,7 @@ character-logic-or-requirement =
     Вы должны{ $inverted ->
         [true] { " " }не
        *[other] { "" }
-    } подходить [color=red]хотябы одному[/color] из [color=white]требований[/color]: { $options }
+    } подходить [color=red]хотя бы одному[/color] из [color=white]требований[/color]: { $options }
 character-logic-xor-requirement-listprefix =
     { "" }
     { $indent }[color=white]Х[/color]{ " " }
@@ -117,7 +117,7 @@ character-width-requirement =
             }
        *[other]
             { $max ->
-                [2147483648] шыре [color={ $color }]{ $min }[/color]см
+                [2147483648] шире [color={ $color }]{ $min }[/color]см
                *[other] между [color={ $color }]{ $min }[/color] и [color={ $color }]{ $max }[/color]см в ширину
             }
     }
@@ -142,3 +142,8 @@ character-item-group-requirement =
         [true] иметь { $max } или больше
        *[other] иметь { $max } или меньше
     } предметов из группы [color=white]{ $group }[/color]
+character-cvar-requirement =
+    Сервер должен{ $inverted ->
+        [true] { " " }не
+       *[other] { "" }
+    } иметь [color={ $color }]{ $cvar }[/color] установлен в [color={ $color }]{ $value }[/color].

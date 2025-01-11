@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
+using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Destructible;
 using Content.Shared.Hands.Components;
@@ -9,7 +10,9 @@ using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
+using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Utility;
@@ -27,10 +30,14 @@ namespace Content.Shared.Containers.ItemSlots
     {
         [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
         [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
+        [Dependency] private readonly IConfigurationManager _config = default!;
         [Dependency] private readonly SharedContainerSystem _containers = default!;
         [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
         [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
         [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
+        [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+
+        private bool _defaultQuickSwap;
 
         public override void Initialize()
         {
@@ -53,6 +60,8 @@ namespace Content.Shared.Containers.ItemSlots
             SubscribeLocalEvent<ItemSlotsComponent, ComponentHandleState>(HandleItemSlotsState);
 
             SubscribeLocalEvent<ItemSlotsComponent, ItemSlotButtonPressedEvent>(HandleButtonPressed);
+
+            _config.OnValueChanged(CCVars.AllowSlotQuickSwap, b => _defaultQuickSwap = b, true);
         }
 
         #region ComponentManagement
@@ -89,7 +98,7 @@ namespace Content.Shared.Containers.ItemSlots
         /// </summary>
         public void AddItemSlot(EntityUid uid, string id, ItemSlot slot, ItemSlotsComponent? itemSlots = null)
         {
-            itemSlots ??= EntityManager.EnsureComponent<ItemSlotsComponent>(uid);
+            itemSlots ??= EnsureComp<ItemSlotsComponent>(uid);
             DebugTools.AssertOwner(uid, itemSlots);
 
             if (itemSlots.Slots.TryGetValue(id, out var existing))
@@ -103,7 +112,7 @@ namespace Content.Shared.Containers.ItemSlots
 
             slot.ContainerSlot = _containers.EnsureContainer<ContainerSlot>(uid, id);
             itemSlots.Slots[id] = slot;
-            Dirty(itemSlots);
+            Dirty(uid, itemSlots);
         }
 
         /// <summary>
@@ -127,7 +136,7 @@ namespace Content.Shared.Containers.ItemSlots
             if (itemSlots.Slots.Count == 0)
                 EntityManager.RemoveComponent(uid, itemSlots);
             else
-                Dirty(itemSlots);
+                Dirty(uid, itemSlots);
         }
 
         public bool TryGetSlot(EntityUid uid, string slotId, [NotNullWhen(true)] out ItemSlot? itemSlot, ItemSlotsComponent? component = null)
@@ -202,7 +211,7 @@ namespace Content.Shared.Containers.ItemSlots
                 if (!slot.InsertOnInteract)
                     continue;
 
-                if (!CanInsert(uid, args.Used, args.User, slot, swap: slot.Swap, popup: args.User))
+                if (!CanInsert(uid, args.Used, args.User, slot, swap: slot.Swap ?? _defaultQuickSwap, popup: args.User))
                     continue;
 
                 // Drop the held item onto the floor. Return if the user cannot drop.
@@ -255,8 +264,7 @@ namespace Content.Shared.Containers.ItemSlots
             if (slot.ContainerSlot == null)
                 return false;
 
-            if ((!slot.Whitelist?.IsValid(usedUid) ?? false) ||
-                (slot.Blacklist?.IsValid(usedUid) ?? false))
+            if (_whitelistSystem.IsWhitelistFail(slot.Whitelist, usedUid) || _whitelistSystem.IsBlacklistPass(slot.Blacklist, usedUid))
             {
                 if (popup.HasValue && slot.WhitelistFailPopup.HasValue)
                     _popupSystem.PopupClient(Loc.GetString(slot.WhitelistFailPopup), uid, popup.Value);
@@ -626,9 +634,9 @@ namespace Content.Shared.Containers.ItemSlots
                 return;
 
             if (args.TryEject && slot.HasItem)
-                TryEjectToHands(uid, slot, args.Session.AttachedEntity, false);
-            else if (args.TryInsert && !slot.HasItem && args.Session.AttachedEntity is EntityUid user)
-                TryInsertFromHand(uid, slot, user);
+                TryEjectToHands(uid, slot, args.Actor, true);
+            else if (args.TryInsert && !slot.HasItem)
+                TryInsertFromHand(uid, slot, args.Actor);
         }
         #endregion
 

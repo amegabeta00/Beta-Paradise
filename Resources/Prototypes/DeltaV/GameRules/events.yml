@@ -1,7 +1,7 @@
 - type: entity
   id: XenoVents
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -33,12 +33,12 @@
 - type: entity
   id: XenoVentsWeak
   parent: XenoVents
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: true
     reoccurrenceDelay: 12
-    minimumPlayers: 1
+    minimumPlayers: 5
   - type: VentCrittersRule
     entries:
     - id: MobXeno
@@ -59,10 +59,9 @@
 - type: entity
   id: MothroachSpawn
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    id: VentCritters
     earliestStart: 15
     minimumPlayers: 1
     weight: 4
@@ -75,14 +74,12 @@
 - type: entity
   id: PirateRadioSpawn
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 7.5
-    minimumPlayers: 10
+    weight: 8.5
+    minimumPlayers: 40
     maxOccurrences: 1
     duration: 1
   - type: PirateRadioSpawnRule
     debrisCount: 6
-    distanceModifier: 13
-    debrisDistanceModifier: 3

@@ -1,11 +1,11 @@
 ﻿- type: gameMap
   id: LPPPebble
   mapName: 'Пеббл'
-  mapPath: /Maps/_LostParadise/pebble.yml
+  mapPath: /Maps/_LostParadise/LPPPebble.yml
   minPlayers: 0
   maxPlayers: 30
   stations:
-    PebbleStation:
+    LPPPebble:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -66,5 +66,5 @@
             Clerk: [ 1, 1 ]
           #LOST PARADISE
             LPPBlueShieldOfficer: [ 1, 1 ]
-            LPPAdjutant: [ 1, 1 ]
-            LPPSecurityEnginer: [ 1, 1 ]
+            AdministrativeAssistant: [ 1, 1 ]
+            LPPSecurityEngineer: [ 1, 1 ]

@@ -7,6 +7,9 @@
   playTimeTracker: JobChiefMedicalOfficer
   antagAdvantage: 6 # DeltaV - Reduced TC: Head of Staff
   requirements:
+    - !type:CharacterAgeRequirement
+      min: 25
+      max: 80
     - !type:CharacterPlaytimeRequirement
       tracker: JobChemist
       min: 14400 #DeltaV 4 hrs
@@ -43,6 +46,8 @@
   - !type:AddComponentSpecial
     components:
     - type: CPRTraining
+    - type: SurgerySpeedModifier
+      speedModifier: 2.5
 
 - type: startingGear
   id: CMOGear

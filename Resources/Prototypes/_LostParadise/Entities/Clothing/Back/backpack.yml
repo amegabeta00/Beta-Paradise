@@ -1,4 +1,35 @@
 - type: entity
+  abstract: true
+  parent: ClothingBackpack
+  id: LPPClothingSatchelSmugglerAbstract
+  name: Smuggling Satchel
+  description: Smuggling Satchel Abstract
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: Storage
+    maxItemSize: Large
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/satchel.rsi
+    visible: false
+  - type: SubFloorHide
+  - type: Anchorable
+  - type: Appearance
+  - type: CollideOnAnchor
+    enable: false
+  - type: Transform
+    anchored: false
+
+- type: entity
+  parent: LPPClothingBackpackBlueshield
+  id: LPPClothingBackpackBlueshieldFilled
+  components:
+  - type: StorageFill
+    contents:
+    - id: Flash
+    - id: LPPClothingOuterHardsuitBlueshield
+
+- type: entity
   parent: ClothingBackpackERTLeader
   id: LPPClothingBackpackIIC
   name: IIC Backpack 'Delta'
@@ -53,7 +84,7 @@
 - type: entity
   parent: ClothingBackpack
   id: LPPClothingBackpackSecurityEngineer
-  name: hop duffel bag
+  name: sec eng backpack
   description: Twice as many handcuffs!
   components:
   - type: Sprite
@@ -80,8 +111,20 @@
 - type: entity
   parent: ClothingBackpackERTLeader
   id: LPPClothingBackpackBackPackNPZ
-  name: рюкзак НПЗ
-  description: Вместит всё, что надо.
+  name: NPZ backpack
+  description: It will contain everything you need.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Back/Backpacks/upgbacpacks.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: LPPClothingBackpackHunter
+  name: Hunter backpack
+  description: A durable backpack with additional pockets, which significantly increases the capacity and at the same time does not restrict the movement of the wearer in any way.
+  components:
+  - type: Sprite
+    sprite: _LostParadise/Clothing/Back/Backpacks/backhunter.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,3

@@ -1,4 +1,3 @@
-verb-system-waiting-on-server-text = Ожидание на сервере...
 verb-system-null-server-response = Сущность не в поле зрения. Вы не должны видеть этого.
 # if verbs have a range of targets (e.g., multiple ejectables) you can
 # usually just use Entity.Name. But it is a bit odd when targeting yourself
@@ -24,9 +23,10 @@ verb-categories-set-sensor = Датчики
 verb-categories-timer = Установить задержку
 verb-categories-lever = Рычаг
 verb-categories-select-type = Выбрать тип
+verb-categories-power-level = Уровень мощности
 verb-categories-fax = Задать место назначения
 verb-categories-interaction = Взаимодействовать
-verb-categories-power-level = Уровень мощности
+verb-categories-blood-cult = Культ Крови
 verb-common-toggle-light = Переключить свет
 verb-common-close = Закрыть
 verb-common-open = Открыть

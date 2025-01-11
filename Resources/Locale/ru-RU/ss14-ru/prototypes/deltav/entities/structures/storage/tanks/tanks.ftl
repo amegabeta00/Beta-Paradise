@@ -1,6 +1,6 @@
-ent-KvassTank = { ent-StorageTank }
-    .suffix = Пустая
-    .desc = { ent-StorageTank.desc }
-ent-KvassTankFull = { ent-KvassTank }
-    .suffix = Full
-    .desc = { ent-KvassTank.desc }
+ent-KvassTank = Бочка кваса
+    .suffix = Пустой
+    .desc = Прохладный освежающий напиток, со вкусом социализма.
+ent-KvassTankFull = Бочка кваса
+    .suffix = Полный
+    .desc = Прохладный освежающий напиток, со вкусом социализма.

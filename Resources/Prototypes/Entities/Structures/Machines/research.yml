@@ -18,6 +18,7 @@
     - Arsenal
     - Experimental
     - CivilianServices
+    - LPPDiamondProduction
   - type: ApcPowerReceiver
     powerLoad: 200
   - type: ExtensionCableReceiver
@@ -83,8 +84,8 @@
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
-    - key: enum.ResearchClientUiKey.Key
-      type: ResearchClientBoundUserInterface
+      enum.ResearchClientUiKey.Key:
+        type: ResearchClientBoundUserInterface
   - type: Appearance
   - type: GenericVisualizer
     visuals:

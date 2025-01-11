@@ -35,7 +35,7 @@
     path: /Audio/Jukebox/starlight.ogg
 
 - type: jukebox
-  id: LPPPivoDance
-  name: Pivo Dance - BL02DL
+  id: sunset
+  name: PigeonBeans - Sunset
   path:
-    path: /Audio/Jukebox/PivoDance.ogg
+    path: /Audio/Jukebox/sunset.ogg

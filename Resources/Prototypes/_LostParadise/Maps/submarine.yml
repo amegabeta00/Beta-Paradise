@@ -1,10 +1,10 @@
 ﻿- type: gameMap
   id: LPPSubmarine
   mapName: 'Субмарина'
-  mapPath: /Maps/_LostParadise/submarine.yml
+  mapPath: /Maps/_LostParadise/LPPSubmarine.yml
   minPlayers: 60
   stations:
-    Submarine:
+    LPPSubmarine:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -41,8 +41,8 @@
             HeadOfSecurity: [ 1, 1 ]
             Prisoner: [ 2, 4 ]
             PrisonGuard: [ 1, 2 ]
-            SecurityOfficer: [ 4, 6 ]
-            SecurityCadet: [ 3, 4 ]
+            SecurityOfficer: [ 3, 2 ]
+            SecurityCadet: [ 2, 3 ]
             Warden: [ 1, 1 ]
           #service
             Bartender: [ 2, 3 ]
@@ -77,5 +77,5 @@
             ChiefJustice: [ 1, 1 ]
           #LOST PARADISE
             LPPBlueShieldOfficer: [ 1, 1 ]
-            LPPAdjutant: [ 1, 1 ]
-            LPPSecurityEnginer: [ 1, 1 ]
+            AdministrativeAssistant: [ 1, 1 ]
+            LPPSecurityEngineer: [ 1, 1 ]

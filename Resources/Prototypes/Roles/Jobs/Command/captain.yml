@@ -4,6 +4,11 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
+    - !type:CharacterHeightRequirement
+      min: 150
+    - !type:CharacterAgeRequirement
+      min: 25
+      max: 80
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
       min: 18000 # DeltaV - 5 hours
@@ -24,10 +29,10 @@
       min: 108000 # DeltaV - 30 hours
     - !type:CharacterOverallTimeRequirement # DeltaV - Playtime requirement
       min: 108000 # 30 hours
-    - !type:CharacterWhitelistRequirement
+#    - !type:CharacterWhitelistRequirement
   weight: 20
   startingGear: CaptainGear
-  icon: "JobIconCaptain"
+  icon: JobIconCaptain
   requireAdminNotify: true
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom
@@ -47,10 +52,6 @@
     jumpsuit: ClothingUniformJumpsuitCaptain
     back: ClothingBackpackCaptainFilled
     shoes: ClothingShoesBootsLaceup
-    head: ClothingHeadHatCaptain
-    eyes: ClothingEyesGlassesSunglasses
-    gloves: ClothingHandsGlovesCaptain
-    outerClothing: ClothingOuterArmorCaptainCarapace
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
     socks: LPPClothingUnderSocksNorm
@@ -60,3 +61,6 @@
   innerClothingSkirt: ClothingUniformJumpskirtCaptain
   satchel: ClothingBackpackSatchelCaptainFilled
   duffelbag: ClothingBackpackDuffelCaptainFilled
+  # storage:
+  #   back:
+  #   - LPPTelebaton

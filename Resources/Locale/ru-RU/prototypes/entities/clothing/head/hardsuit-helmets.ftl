@@ -9,23 +9,23 @@ ent-ClothingHeadHelmetHardsuitSpatio = Шлем HpI-20s
 ent-ClothingHeadHelmetHardsuitSalvage = Шлем HpI-20a
     .desc = Тяжёлый шлем спроектированный для скафандра Lavrion, его укреплённая поверхность хорошо защищает владельца от контактов с фауной.
 ent-ClothingHeadHelmetHardsuitVoidParamed = Шлем ZhP-24m
-    .desc = Лёгкий шлем спроектированный для скафандра Sukunabikona. Имеет вставки из высокопрочного прозрачного пластика для лучшей видимости
+    .desc = Лёгкий шлем спроектированный для скафандра Sukunabikona. Имеет вставки из высокопрочного прозрачного пластика для лучшей видимости.
 ent-ClothingHeadHelmetHardsuitMaxim = Загадочный шлем
-    .desc = Старомодный шлем покрашенный в красное и чёрное, крепкий и лёгкий.
+    .desc = Старомодный шлем окрашенный в красное и чёрное, крепкий и лёгкий.
 ent-ClothingHeadHelmetHardsuitSecurity = Шлем FPA-83s
     .desc = Громоздкий шлем тактического скафандра Baghatur. Защищает владельца от пуль и взрывов ценой мобильности.
 ent-ClothingHeadHelmetHardsuitBrigmedic = Шлем FPA-84m
     .desc = Громоздкий шлем тактического скафандра Tsagaan. Защищает владельца от пуль и взрывов ценой мобильности.
 ent-ClothingHeadHelmetHardsuitCombatStandard = Шлем FPA-85
     .desc =
-        Громоздкий шлем тактического скафандра Baghatur Mk.II.
-        Защищает владельца от пуль и взрывов ценой мобильности.
+        Громоздкий элемент тактического сканд-ра Мк.II с потайным карманом.
+        Защищает своего владельца от баллистических и взрывоопасных предметов за счет потери мобильности.
 ent-ClothingHeadHelmetHardsuitCombatOfficer = Шлем FPA-85s
     .desc = { ent-ClothingHeadHelmetHardsuitCombatStandard.desc }
 ent-ClothingHeadHelmetHardsuitCombatMedical = Шлем FPA-86
     .desc =
-        Громоздкий шлем тактического скафандра Tsagaan Mk.II tacsuit.
-        Защищает владельца от пуль и взрывов ценой мобильности.
+        Громоздкий шлем, используемый в комплекте с тактическим костюмом Tsagaan Mk.II.
+        Защищает своего владельца от баллистических и взрывоопасных предметов за счет потери мобильности.
 ent-ClothingHeadHelmetHardsuitCombatCorpsman = Шлем FPA-86m
     .desc = { ent-ClothingHeadHelmetHardsuitCombatMedical.desc }
 ent-ClothingHeadHelmetHardsuitWarden = Шлем FPA-92s
@@ -33,7 +33,7 @@ ent-ClothingHeadHelmetHardsuitWarden = Шлем FPA-92s
 ent-ClothingHeadHelmetHardsuitCombatRiot = Шлем FPA-93
     .desc =
         Модифицированный для борьбы с беспорядками шлем модели Sulde Mk.II.
-        Предоставляет лучшую защиту чем обычный тактический шлем ценой мобильности.
+        Представляет лучшую защиту, чем другие модели с такой же мобильностью..
 ent-ClothingHeadHelmetHardsuitCombatWarden = Шлем FPA-93s
     .desc = { ent-ClothingHeadHelmetHardsuitCombatRiot.desc }
 ent-ClothingHeadHelmetHardsuitCap = Шлем NT-42c
@@ -43,21 +43,21 @@ ent-ClothingHeadHelmetHardsuitEngineeringWhite = Шлем HpI-24c
 ent-ClothingHeadHelmetHardsuitMedical = Шлем ZhP-25m
     .desc =
         Крайне лёгкий шлем модели Okuninushi.
-        Создан из укерплённого позрачного пластика, предоставляет полный обзор.
+        Создан из укрепленного прозрачного пластика, предоставляет полный обзор.
 ent-ClothingHeadHelmetHardsuitRd = Шлем NT-45e
     .desc = Тяжелобронированный шлем модели Sophia. Степень защиты аналогична скафандру.
 ent-ClothingHeadHelmetHardsuitMystagogue = Шлем NT-45e
     .desc = { ent-ClothingHeadHelmetHardsuitRd.desc }
 ent-ClothingHeadHelmetHardsuitSecurityRed = Шлем FPA-98s
-    .desc = Высококачественный шлем модели Dayicin. Лучшая защита и подвижность по сравнению с обычными тактическими шлемами.
+    .desc = Высококачественный шлем модели тактического костюма Dayicin. Обеспечивает лучшую защиту, чем стандартный тактический костюм без значительной потери мобильности.
 ent-ClothingHeadHelmetHardsuitCombatAdvanced = Шлем FPA-99
     .desc =
-        Высококачественный шлем для скафандра Dayicin Mk.II.
-        Лёгкая конструкция позволяет обеспечить стандартный уровень защиты без ущерба мобильности.
+        Высококачественный шлем модели тактического костюма Dayicin Mk.II. 
+        Особенности легкой конструкции, предлагают такую же защиту, как на стандартном тактическом костюме без значительной потери мобильности.
 ent-ClothingHeadHelmetHardsuitCombatHoS = Шлем FPA-99s
     .desc = { ent-ClothingHeadHelmetHardsuitCombatAdvanced.desc }
 ent-ClothingHeadHelmetHardsuitLuxury = Шлем HpI-20c
-    .desc = Модифицированный шлем модли Minos, покрашен в цвета офицера логистики и предоставляет защиту аналогичную скафандру.
+    .desc = Модифицированный шлем модли Minos, покрашен в цвета Квартирмейстера и предоставляет защиту аналогичную скафандру.
 ent-ClothingHeadHelmetHardsuitSyndie = Шлем CSA-51a
     .desc = Бронированный шлем модели Shanlin. Покрашен в печально известный кроваво-красный.
 ent-ClothingHeadHelmetHardsuitSyndieMedic = Шлем CSA-51m
@@ -67,25 +67,25 @@ ent-ClothingHeadHelmetHardsuitSyndieMedic = Шлем CSA-51m
 ent-ClothingHeadHelmetHardsuitSyndieElite = Шлем CSA-54UA
     .desc = Элитная версия шлема модели Shanli, имеет улучшенную защиту и теплоизоляцию.
 ent-ClothingHeadHelmetHardsuitSyndieCommander = Шлем CSA-54c
-    .desc = Тяжелобронированная версия шлема модели Shanlin, создана для командиров спец. отрядов. Выкрашена в кроваво-красный.
+    .desc = Тяжело Бронированная версия шлема модели Shanlin, создана для командиров спец. отрядов. Выкрашена в кроваво-красный.
 ent-ClothingHeadHelmetHardsuitCybersun = Шлем CSA-80UA
     .desc = Сверхпрочная модель шлема Guan Yu.
 ent-ClothingHeadHelmetHardsuitWizard = Шлем WZD-84
     .desc = Причудливый шлем, украшенный драгоценными камнями. Защищает от космоса, не сковывая движения.
 ent-ClothingHeadHelmetHardsuitLing = Органический пустотный шлем
-    .desc = Биошлем защищающий от вакуума и пониженных темпиратур.
+    .desc = Биошлем защищающий от вакуума и пониженных температур.
 ent-ClothingHeadHelmetHardsuitPirateEVA = Шлем пирата
     .desc = Пиратский пустотный шлем, тяжёлый, но хорошо защищает.
     .suffix = Пиратский
 ent-ClothingHeadHelmetHardsuitPirateCap = Шлем пиратского капитана
-    .desc = Пустотный шлем, сделаный на заказ для пиратского капитана
+    .desc = Пустотный шлем, сделанный на заказ для пиратского капитана.
     .suffix = Пиратский
 ent-ClothingHeadHelmetHardsuitSyndieReverseEngineered = Шлем NTSA-122
-    .desc = Прочный легковесный шлем, созданный департаментом особых приобретений Nanotrasen.
+    .desc = Прочный и легкий шлем, изготовленный по специальному заказу Департамента Специальных Операций.
 ent-ClothingHeadHelmetHardsuitJuggernautReverseEngineered = Шлем NTSA-126
-    .desc = Сверхпрочный шлем, созданный департаментом особых приобретений Nanotrasen, основываясь на модели "Juggernaut".
+    .desc = Очень крепкий шлем, изготовленный по специальному заказу Департамента Специальных Операций на дизайне тактического костюма "Guan Yu".
 ent-ClothingHeadHelmetHardsuitERTCentcomm = Шлем NT-444c
-    .desc = Специальный тактический шлем, предназначенный для ОЦК.
+    .desc = Поношенный специальный тактический шлем Офицера Центрального Командования.
 ent-ClothingHeadHelmetHardsuitERTLeader = Шлем NT-444l
     .desc = Специальный тактический шлем, предназначенный для командования ОБР.
 ent-ClothingHeadHelmetHardsuitERTEngineer = Шлем NT-444e
@@ -100,9 +100,9 @@ ent-ClothingHeadHelmetCBURN = Шлем NT-444-CBRN
     .desc = Спец. капюшон с защитой от вакуума и огня, разработанный для отрядов зачистки.
 ent-ClothingHeadHelmetHardsuitDeathsquad = Шлем NT-662ua
     .desc = Продвинутый тактический шлем, предназначенный для отрядов спец. назначения.
-ent-ClothingHeadHelmetHardsuitClown = шлем скафандра клоуна
-    .desc = Цветной пустотный шлем клоуна.
-ent-ClothingHeadHelmetHardsuitMime = шлем скафандра мима
-    .desc = Пустотный шлем мима, с нарисованной на нём маской.
+ent-ClothingHeadHelmetHardsuitClown = Шлем скафандра клоуна
+    .desc = Красочный шлем легкого скафандра клоуна. При тщательном осмотре кажется, что это обычный шлем скафандра, разукрашенный мелками, а клоунская маска приклеена поверх него.
+ent-ClothingHeadHelmetHardsuitMime = Шлем скафандра мима
+    .desc = Шлем лёгкого скафандра мима. При более тщательном осмотре, кажется, что это обычный шлем скафандра, разукрашенный мелками, а маска мима приклеена поверх него.
 ent-ClothingHeadHelmetHardsuitSanta = Шлем DNK-31
     .desc = Праздничный шлем производства Donk Co., предназначенный для их специальных развлекательных мероприятий, предоставляет стандартную защиту от космоса.

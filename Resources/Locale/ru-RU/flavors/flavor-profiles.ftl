@@ -126,6 +126,7 @@ flavor-complex-vegetables = как овощи
 
 ## Complex foodstuffs (cooked foods, joke flavors, etc)
 
+flavor-complex-cherry = как вишня
 flavor-complex-pink = как розовый
 flavor-complex-curry = как карри
 flavor-complex-borsch-1 = как борщ
@@ -173,9 +174,14 @@ flavor-complex-light = как угасший свет
 flavor-complex-profits = как прибыль
 flavor-complex-fishops = как страшная рыбья операция
 flavor-complex-violets = как фиалки
-flavor-complex-pyrotton = как горящий рот
-flavor-complex-mothballs = как нафталиновые шарики
+flavor-complex-pyrotton = как горящий рот.
+flavor-complex-mothballs = как шарики нафталина
 flavor-complex-paint-thinner = как растворитель для краски
+flavor-complex-numbing-tranquility = как онемевшее спокойствие
+flavor-complex-true-nature = как истинная природа реальности
+flavor-complex-false-meat = не совсем не похоже на мясо
+flavor-complex-paper = как мягкая целлюлоза
+flavor-complex-compressed-meat = как сжатое мясо
 flavor-complex-alcohol = как алкоголь
 flavor-complex-soda = как газировка
 flavor-complex-juice = как сок
@@ -248,11 +254,11 @@ flavor-complex-gin-tonic = как крепкая газировка с лимо�
 flavor-complex-screwdriver = как крепкий апельсиновый сок
 flavor-complex-cogchamp = как латунь
 flavor-complex-themartinez = как фиалки и лимонная водка
-flavor-complex-vodka-red-bool = как инфаркт
-flavor-complex-irish-bool = как кофеин и Ирландия
-flavor-complex-xeno-basher = как уничтожение жуков
+flavor-complex-vodka-red-bool = как сердечный приступ
+flavor-complex-irish-bool = кофеин и Ирландия
+flavor-complex-xeno-basher = как убийство жуков и демократия
 flavor-complex-budget-insuls-drink = как взлом шлюза
-flavor-complex-watermelon-wakeup = как сладкое пробуждение
+flavor-complex-watermelon-wakeup = как приятный звонок будильника
 flavor-complex-rubberneck = как синтетика
 flavor-complex-irish-car-bomb = как шипучая пенка колы
 
@@ -263,7 +269,6 @@ flavor-complex-antifreeze = как тепло
 flavor-complex-pilk = как сладкое молоко
 
 # Medicine/chemical-specific flavors.
-
 
 ## Generic flavors.
 

@@ -11,11 +11,18 @@
   maleFirstNames: names_vulpkanin_male
   femaleFirstNames: names_vulpkanin_female
   lastNames: names_vulpkanin_last
+  minHeight: 0.75
+  defaultHeight: 0.85
+  maxHeight: 1.1
+  minWidth: 0.65
+  defaultWidth: 0.85
+  maxWidth: 1.15
 
 - type: speciesBaseSprites
   id: MobVulpkaninSprites
   sprites:
     Head: MobVulpkaninHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -36,6 +43,9 @@
 - type: markingPoints
   id: MobVulpkaninMarkingLimits
   points:
+    Face:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false
@@ -46,14 +56,29 @@
       points: 1
       required: true
       defaultMarkings: [ VulpTail ]
-    Head:
-      points: 1
+    RightLeg:
+      points: 2
       required: false
-    Legs:
-      points: 6
+    RightFoot:
+      points: 2
       required: false
-    Arms:
-      points: 6
+    LeftLeg:
+      points: 2
+      required: false
+    LeftFoot:
+      points: 2
+      required: false
+    RightArm:
+      points: 2
+      required: false
+    RightHand:
+      points: 3
+      required: false
+    LeftArm:
+      points: 2
+      required: false
+    LeftHand:
+      points: 3
       required: false
     Snout:
       points: 1
@@ -62,6 +87,9 @@
       points: 1
       required: true
       defaultMarkings: [ VulpEar ]
+    HeadSide:
+      points: 2
+      required: false
 
 - type: humanoidBaseSprite
   id: MobVulpkaninHead

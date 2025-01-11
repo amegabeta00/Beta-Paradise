@@ -56,6 +56,7 @@
       displayName: Head
     - name: pocket1
       slotTexture: pocket
+      fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
       stripTime: 3
@@ -66,6 +67,7 @@
       stripHidden: true
     - name: pocket2
       slotTexture: pocket
+      fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
       stripTime: 3
@@ -82,9 +84,12 @@
       uiWindowPos: 2,0
       strippingWindowPos: 2,5
       dependsOn: outerClothing
+      dependsOnComponents:
+      - type: AllowSuitStorage
       displayName: Suit Storage
     - name: id
       slotTexture: id
+      fullTextureName: template_small
       slotFlags: IDCARD
       slotGroup: SecondHotbar
       stripTime: 6
@@ -94,6 +99,7 @@
       displayName: ID
     - name: belt
       slotTexture: belt
+      fullTextureName: template_small
       slotFlags: BELT
       slotGroup: SecondHotbar
       stripTime: 6
@@ -102,39 +108,10 @@
       displayName: Belt
     - name: back
       slotTexture: back
+      fullTextureName: template_small
       slotFlags: BACK
       slotGroup: SecondHotbar
       stripTime: 6
       uiWindowPos: 3,0
       strippingWindowPos: 0,5
       displayName: Back
-    - name: breast #LPP slot breast
-      slotTexture: breast
-      slotFlags: BREAST
-      stripTime: 6
-      uiWindowPos: 3,3
-      strippingWindowPos: 3,1
-      displayName: Breast
-      whitelist:
-        tags:
-          - breast
-    - name: underwear #LPP slot underwear
-      slotTexture: underwear
-      slotFlags: UNDERWEAR
-      stripTime: 6
-      uiWindowPos: 3,2
-      strippingWindowPos: 3,2
-      displayName: Underwear
-      whitelist:
-        tags:
-          - underwear
-    - name: socks #LPP slot socks
-      slotTexture: socks
-      slotFlags: SOCKS
-      stripTime: 6
-      uiWindowPos: 3,1
-      strippingWindowPos: 3,3
-      displayName: Socks
-      whitelist:
-        tags:
-          - socks

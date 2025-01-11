@@ -49,8 +49,8 @@
 - type: entity
   id: LPPBulletM4A1
   parent: LPPBaseBullet
-  name: пуля (5,56х45)
-  noSpawn: true
+  name: Bullet (5,56x45)
+  categories: [ HideSpawnMenu ]
   description: America! FUCK YEA!
   components:
   - type: Projectile
@@ -62,8 +62,8 @@
 - type: entity
   id: LPPBulletRubberM4A1
   parent: LPPBaseBullet
-  name: пуля (5,56х45 резиновая)
-  noSpawn: true
+  name: Bullet (5,56x45 rubber)
+  categories: [ HideSpawnMenu ]
   description: America! FUCK YEA!
   components:
   - type: Projectile
@@ -77,9 +77,9 @@
 
 - type: entity
   id: LPPBulletPracticeM4A1
-  name: пуля (5,56х45 учебная)
+  name: bullet (5,56x45 practice)
   parent: BaseBulletPractice
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -89,8 +89,8 @@
 - type: entity
   id: LPPBulletUraniumM4A1
   parent: BaseBulletUranium
-  name: пуля (5,56х45 урановая)
-  noSpawn: true
+  name: bullet (5,56x45 uranium)
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -101,8 +101,8 @@
 - type: entity
   id: LPPBulletIncendiaryM4A1
   parent: BaseBulletIncendiary
-  name: пуля (5,56х45 зажигательная)
-  noSpawn: true
+  name: bullet (5,56x45 incendiary)
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -114,10 +114,83 @@
   id: LPPBulletLightRifleHunting
   name: Huntingbullet (.30 rifle)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
         Piercing: 16
         Blunt: 7
+
+- type: entity
+  id: LPPBulletMinigunRubber
+  name: minigun bullet (.10 rifle rubber)
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+
+- type: entity
+  id: LPPBulletMinigunPractice
+  name: minigun bullet (.10 rifle practice)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  id: LPPBulletMinigunAP
+  name: minigun bullet (.10 rifle AP)
+  parent: BulletHeavyRifle
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 5
+    ignoreResistances: true
+
+- type: entity
+  id: LPPBulletMinigunUranium
+  name: minigun bullet (.10 rifle uranium)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 3
+        Radiation: 8
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: LPPBulletAntiMaterielNonlethal
+  name: bullet (.60 anti-materiel Non-lethal)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+  - type: StaminaDamageOnCollide
+    damage: 60
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: LPPBulletAntiMaterielCP
+  name: bullet (.60 Concrete projectile)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Structural: 120
+  - type: StaminaDamageOnCollide
+    damage: 10

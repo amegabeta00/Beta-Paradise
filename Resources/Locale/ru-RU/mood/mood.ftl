@@ -22,6 +22,7 @@ mood-effect-MobHighPressure = У меня такое чувство, будто 
 mood-effect-TraitSaturnine = Все как-то отстойно. Ненавижу эту работу.
 mood-effect-Dead = Ты мертв.
 mood-effect-BeingHugged = Объятия — это приятно.
+mood-effect-BeingPet = Кто-то погладил меня!
 mood-effect-ArcadePlay = Мне было весело играть в интересную аркадную игру.
 mood-effect-GotBlessed = Я был благословлен.
 mood-effect-PetAnimal = Животные такие милые, я не могу перестать их гладить!
@@ -30,3 +31,19 @@ mood-effect-TraitorFocused = У меня есть цель, и я ее дост�
 mood-effect-RevolutionFocused = ДА ЗДРАВСТВУЕТ РЕВОЛЮЦИЯ!!!
 mood-effect-CultFocused = Тёмные Боги, даруйте мне силу!
 mood-effect-TraitSanguine = Мне не о чем беспокоиться. Я уверен, что в конце концов все будет хорошо!
+mood-effect-HeirloomSecure = Моя семейная реликвия в безопасности, а вместе с ней и воспоминания о тех, кто был до меня.
+mood-effect-HeirloomLost = Кажется, я не могу найти свою семейную реликвию, как теперь можно сохранить прошлое?
+# Addictions
+mood-effect-LotoTranscendence =
+    Я МОГУ ВИДЕТЬ ВСЕ, ЧТО ЕСТЬ, КОГДА-ЛИБО БУДЕТ И КОГДА-ЛИБО БЫЛО. ВСЕ БЫТИЕ ОТКРЫЛОСЬ МОЕМУ РАЗУМУ!
+    Я ДОЛЖЕН ЗАПОЛУЧИТЬ ВСЕ. Я ДОЛЖЕН ЗНАТЬ ВСЕ. АБСОЛЮТНО ВСЕ. НАВСЕГДА!
+mood-effect-LotoEnthrallment =
+    Он убежал от меня... Сердце всего бытия ушло из моей души, оставив после себя пустоту, которую я не могу вынести.
+    Я боюсь, что увяну, если не смогу снова испить из чаши знания.
+mood-effect-NicotineBenefit = У меня такое чувство, будто я всю жизнь стоял и только что сел.
+mood-effect-NicotineWithdrawal = Мне бы сейчас пойти и прикурить немного.
+# Surgery
+mood-effect-SurgeryPain = Операция причиняет боль...
+# Drugs
+mood-effect-EthanolBenefit = Я чувствую себя таким расслабленным после выпивки.
+mood-effect-SpaceDrugsBenefit = Ваааау, какие красивые цвета, чувааааак. Я как будто слышу цвет и ощущаю вкус, чувааак.

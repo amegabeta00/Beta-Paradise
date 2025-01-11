@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using System.Text.RegularExpressions;
 using Content.Server.Chat.Systems;
 
@@ -10,7 +10,7 @@ public sealed partial class TTSSystem
     private void OnTransformSpeech(TransformSpeechEvent args)
     {
         if (!_isEnabled) return;
-        args.Message = args.Message.Replace("+", "");
+        args.Message = args.Message.Replace("+", " ");
     }
 
     private string Sanitize(string text)
@@ -137,6 +137,9 @@ public sealed partial class TTSSystem
             {"с4", "Си 4"}, // cyrillic
             {"c4", "Си 4"}, // latinic
             {"бсс", "Бэ Эс Эс"},
+            {"слр", "Эс Эл Эр"},
+            {"осщ", "О Сэ Щэ"},
+            {"сщ", "Сэ Ща"},
         };
 
     private static readonly IReadOnlyDictionary<string, string> ReverseTranslit =

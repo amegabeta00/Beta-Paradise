@@ -4,6 +4,8 @@
   description: job-description-security
   playTimeTracker: JobSecurityOfficer
   requirements:
+    - !type:CharacterHeightRequirement
+      min: 160
     - !type:CharacterDepartmentTimeRequirement
       department: Security
       min: 14400 # DeltaV - 4 hours
@@ -25,7 +27,7 @@
   id: SecurityOfficerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSec
-    back: ClothingBackpackSecurityFilled
+    back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHelmetBasic
@@ -33,11 +35,10 @@
     id: SecurityPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58Nonlethal
     socks: LPPClothingUnderSocksNorm
     underwear: LPPBoxer
   underwear: LPPBriefs
   breast: LPPBraAltWhite
   innerClothingSkirt: ClothingUniformJumpskirtSec
-  satchel: ClothingBackpackSatchelSecurityFilled
-  duffelbag: ClothingBackpackDuffelSecurityFilled
+  satchel: ClothingBackpackSatchelSecurity
+  duffelbag: ClothingBackpackDuffelSecurity

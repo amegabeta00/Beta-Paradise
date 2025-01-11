@@ -89,7 +89,11 @@
         coefficients:
           Heat: 0.7
         flatReductions:
-          Heat: 2
+          Heat: 1.5
+    - type: Reflect
+      reflectProb: 1
+      reflects:
+        - Energy
 
 - type: entity
   name: riot bullet shield
@@ -313,7 +317,7 @@
   name: mirror shield
   parent: BaseShield
   id: MirrorShield
-  description: Eerily glows red... you hear the geometer whispering
+  description: Glows an eerie red. You hear the Geometer whispering...
   components:
     - type: Sprite
       state: mirror-icon
@@ -321,6 +325,7 @@
       heldPrefix: mirror
     - type: Reflect
       reflectProb: 0.95
+      innate: true
       reflects:
         - Energy
     - type: Blocking #Mirror shield reflects heat/laser, but is relatively weak to everything else.
@@ -373,8 +378,10 @@
         path: /Audio/Weapons/ebladehum.ogg
     - type: ItemToggleSize
       activatedSize: Huge
-    - type: ItemToggleDisarmMalus
-      activatedDisarmMalus: 0.6
+    - type: ComponentToggler
+      components:
+      - type: DisarmMalus
+        malus: 0.6
     - type: Sprite
       sprite: Objects/Weapons/Melee/e_shield.rsi
       layers:
@@ -406,8 +413,8 @@
       energy: 2
       color: blue
     - type: Reflect
-      enabled: false
       reflectProb: 0.95
+      innate: true
       reflects:
         - Energy
     - type: Blocking
@@ -468,6 +475,8 @@
         - SecurityCadet
         - SecurityOfficer
         - Warden
+        - LPPSecurityEngineer
+        - Brigmedic
         - Captain
       - label: corvax-hidden-desc-EnergyShield-cargo
         jobRequired:
@@ -503,8 +512,10 @@
         path: /Audio/Weapons/telescopicoff.ogg
         params:
           volume: -5
-    - type: ItemToggleDisarmMalus
-      activatedDisarmMalus: 0.6
+    - type: ComponentToggler
+      components:
+      - type: DisarmMalus
+        malus: 0.6
     - type: ItemToggleSize
       activatedSize: Huge
     - type: Sprite

@@ -1,2 +1,2 @@
-chameleon-projector-invalid = Вы не можете так замаскироваться!
-chameleon-projector-success = Новая маскировка спроецирована.
+chameleon-projector-invalid = Ты не сможешь в это замаскироваться!
+chameleon-projector-success = Спроектированная новая маскировка.

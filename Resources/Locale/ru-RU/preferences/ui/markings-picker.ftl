@@ -14,13 +14,20 @@ marking-slot-remove = Удалить
 # Categories
 
 markings-category-Hair = Причёска
+markings-category-Face = Лицо
 markings-category-FacialHair = Лицевая растительность
 markings-category-Head = Голова
 markings-category-HeadTop = Голова (верх)
 markings-category-HeadSide = Голова (бок)
 markings-category-Snout = Морда
 markings-category-Chest = Грудь
-markings-category-Arms = Руки
-markings-category-Legs = Ноги
+markings-category-RightArm = Правая Рука
+markings-category-RightHand = Правая Кисть
+markings-category-LeftArm = Левая Рука
+markings-category-LeftHand = Левая Кисть
+markings-category-RightLeg = Права Нога
+markings-category-RightFoot = Правая Стопа
+markings-category-LeftLeg = Левая Нога
+markings-category-LeftFoot = Левая Стопа
 markings-category-Tail = Хвост
 markings-category-Overlay = Наложение

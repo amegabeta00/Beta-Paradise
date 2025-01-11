@@ -1,9 +1,41 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
+  id: LPPClothingHeadHelmetAcientSyndieEVA
+  categories: [ HideSpawnMenu ]
+  name: CSA-21BM Helmet
+  description: The helmet is from a strange Syndicate spacesuit, it's in EVA mode.
+  components:
+  - type: Sprite
+    sprite: _LostParadise/Clothing/Head/Helmets/acienthelmsyndieeva.rsi
+  - type: Clothing
+    sprite: _LostParadise/Clothing/Head/Helmets/acienthelmsyndieeva.rsi
+  - type: BreathMask
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: PointLight
+    color: "green"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 10000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+  - type: TemperatureProtection
+    coefficient: 0.005
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
   id: LPPClothingHeadHelmetHunter
-  noSpawn: true
-  name: шлем древнего скафандра Охотника (защитный)
-  description: Крайне комфорнтый шлем, что позволяет вам защититься от морозной погоды. он в защитном режиме.
+  categories: [ HideSpawnMenu ]
+  name: GRT-42w Helmet
+  description: An extremely comfortable helmet that allows you to protect yourself from the frosty weather.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Head/Helmets/winterhardsuithelm.rsi
@@ -15,25 +47,26 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 10000
-  - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.85
-        Slash: 0.85
-        Piercing: 0.85
-        Heat: 0.85
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
   - type: TemperatureProtection
     coefficient: 0.005
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
 
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: LPPClothingHeadHelmetRND
-  noSpawn: true
-  name: шлем НИС
-  description: Шлем от скафандра НИС, довольно полезен и имеет встроенный функционал, по типу определения жидкостей и защиту от сварки, из-за чего довольно громозок.
+  categories: [ HideSpawnMenu ]
+  name: RHS-14s Helmet
+  description: The helmet from the NIS spacesuit is quite useful and has built-in functionality, such as chemical detection and welding protection, which is why it is quite bulky.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Head/Hardsuits/helmrnd.rsi
@@ -62,9 +95,9 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: LPPClothingHeadHelmetScienceNPZ
-  noSpawn: true
-  name: шлем научного скафандра НПЗ
-  description: Шлем от скафандра, довольно полезен и имеет встроенный функционал, по типу определения жидкостей и защиту от сварки.
+  categories: [ HideSpawnMenu ]
+  name: NPZ-34r
+  description: The helmet from the spacesuit is quite useful and has built-in eye protection from welding.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/OuterClothing/Hardsuits/NPZsciense/head.rsi
@@ -72,7 +105,6 @@
     sprite: _LostParadise/Clothing/OuterClothing/Hardsuits/NPZsciense/head.rsi
   - type: BreathMask
   - type: EyeProtection
-  - type: SolutionScanner
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 10000

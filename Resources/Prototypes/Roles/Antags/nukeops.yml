@@ -19,10 +19,10 @@
   objective: roles-antag-nuclear-operative-agent-objective
   requirements:
   - !type:CharacterOverallTimeRequirement
-    min: 108000 # DeltaV - 30 hours
-  - !type:CharacterDepartmentTimeRequirement # DeltaV - Medical dept time requirement
+    min: 108000 #  30 hours
+  - !type:CharacterDepartmentTimeRequirement
     department: Medical
-    min: 36000 # DeltaV - 10 hours
+    min: 36000 # 10 hours
 
 - type: antag
   id: NukeopsCommander
@@ -35,8 +35,30 @@
     min: 216000 # DeltaV - 60 hours
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Security dept time requirement
     department: Security
-    min: 36000 # DeltaV - 10 hours
+    min: 60000 # DeltaV - 10 hours
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
     department: Command
-    min: 36000 # DeltaV - 10 hours
-#  - !type:CharacterWhitelistRequirement
+    min: 60000 # DeltaV - 10 hours
+
+#Lone Operative Gear
+- type: startingGear
+  id: SyndicateLoneOperativeGearFull
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitInteq
+    back: LPPClothingBackpackDuffelSyndicateOperative
+    mask: LPPClothingMaskNeckGaiterLoneOps
+    eyes: LPPClothingEyesGlassesContractor
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: LPPClothingOuterHardsuitInteq
+    neck: ClothingBeltSyndieHolsterBundle
+    shoes: ClothingShoesBootsCombatFilled
+    id: SyndiPDA
+    underwear: LPPThongYellow
+    socks: LPPClothingUnderSocksThighYellow
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: BaseUplinkRadio40TC
+    belt: LPPClothingBeltMaximumWebbing
+  innerClothingSkirt: ClothingUniformJumpskirtOperative
+  satchel: LPPClothingBackpackDuffelSyndicateOperative
+  duffelbag: LPPClothingBackpackDuffelSyndicateOperative

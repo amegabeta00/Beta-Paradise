@@ -14,7 +14,7 @@
     slots:
     - belt
   - type: Item
-    size: Ginormous
+    size: Huge # DeltaV: Was Ginormous, lets it fit in conscription bag
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -23,6 +23,7 @@
     areaInsert: true
     whitelist:
       tags:
+        - LPPProcessedDiamond
         - ArtifactFragment
         - Ore
   - type: Dumpable

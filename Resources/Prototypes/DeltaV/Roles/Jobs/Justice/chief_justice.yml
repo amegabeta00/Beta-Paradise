@@ -4,6 +4,9 @@
   description: job-description-chief-justice
   playTimeTracker: JobChiefJustice
   requirements:
+    - !type:CharacterAgeRequirement
+      min: 25
+      max: 80
     - !type:CharacterPlaytimeRequirement
       tracker: JobClerk
       min: 36000 # 10 hours
@@ -29,6 +32,7 @@
   - Security
   - Maintenance
   - External
+  - Lawyer
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -55,4 +59,6 @@
   innerClothingSkirt: ClothingUniformJumpskirtChiefJustice
   satchel: ClothingBackpackSatchelFilled # TODO- make Justice departmebt bags
   duffelbag: ClothingBackpackDuffelFilled
-
+  # storage:
+  #   back:
+  #   - LPPTelebaton

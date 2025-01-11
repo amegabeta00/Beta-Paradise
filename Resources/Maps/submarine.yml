@@ -173681,7 +173681,6 @@ entities:
           occludes: True
           ents:
           - 22261
-          - 22260
           - 22262
           - 22263
         paper_label: !type:ContainerSlot
@@ -241042,15 +241041,6 @@ entities:
     - type: Transform
       pos: -11.293884,37.834354
       parent: 2
-- proto: WeaponSubMachineGunWt550
-  entities:
-  - uid: 22260
-    components:
-    - type: Transform
-      parent: 30282
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: WeaponTurretHostile
   entities:
   - uid: 9161

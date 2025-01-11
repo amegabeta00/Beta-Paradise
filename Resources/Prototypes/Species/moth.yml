@@ -11,6 +11,12 @@
   maleFirstNames: names_moth_first_male
   femaleFirstNames: names_moth_first_female
   lastNames: names_moth_last
+  minHeight: 0.8
+  defaultHeight: 0.9
+  maxHeight: 1.3
+  minWidth: 0.70
+  defaultWidth: 0.9
+  maxWidth: 1.35
 
 - type: speciesBaseSprites
   id: MobMothSprites
@@ -67,11 +73,29 @@
     Chest:
       points: 1
       required: false
-    Legs:
-      points: 6
+    RightLeg:
+      points: 2
       required: false
-    Arms:
-      points: 6
+    RightFoot:
+      points: 2
+      required: false
+    LeftLeg:
+      points: 2
+      required: false
+    LeftFoot:
+      points: 2
+      required: false
+    RightArm:
+      points: 2
+      required: false
+    RightHand:
+      points: 2
+      required: false
+    LeftArm:
+      points: 2
+      required: false
+    LeftHand:
+      points: 2
       required: false
 
 - type: humanoidBaseSprite

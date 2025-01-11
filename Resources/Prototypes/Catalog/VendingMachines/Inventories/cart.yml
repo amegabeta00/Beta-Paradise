@@ -3,43 +3,43 @@
   startingInventory:
     PassengerPDA: 5
     ClearPDA: 5
-  # Basic Department PDAs
-    SecurityPDA: 2
-    SecurityCadetPDA: 4
-    MedicalPDA: 2
-    MedicalInternPDA: 4
-    EngineerPDA: 2
-    TechnicalAssistantPDA: 4
-    SciencePDA: 2
-    ResearchAssistantPDA: 4
-    CargoPDA: 2
-    SalvagePDA: 2
-  # HOP's service department
-    ServiceWorkerPDA: 4
-    ChefPDA: 2
-    BotanistPDA: 2
-    BartenderPDA: 2
-    JanitorPDA: 2
-    LibrarianPDA: 1
-    LawyerPDA: 1
-    ReporterPDA: 1
-    ZookeeperPDA: 1
-    BoxerPDA: 1
-    ClownPDA: 1
-    MimePDA: 1
-    MusicianPDA: 1
-    ClothingHeadsetGrey: 5
+    ServiceWorkerPDA: 3
+    ChefPDA: 3
+    BotanistPDA: 3
+    BartenderPDA: 3
+    JanitorPDA: 3
+    LibrarianPDA: 3
+    LawyerPDA: 3
+    ReporterPDA: 3
+    ZookeeperPDA: 3
+    BoxerPDA: 3
+    ClownPDA: 3
+    MimePDA: 3
+    MusicianPDA: 3
+    ClothingHeadsetGrey: 4
     ClothingHeadsetService: 4
-    ClothingHeadsetCargo: 2
-    ClothingHeadsetEngineering: 2
-    ClothingHeadsetMedical: 2
-    ClothingHeadsetScience: 2
+    EncryptionKeyService: 4
+    EncryptionKeyCommon: 4
     RubberStampApproved: 1
     RubberStampDenied: 1
     Paper: 10
-    EncryptionKeyCargo: 2
-    EncryptionKeyEngineering: 2
-    EncryptionKeyMedical: 2
-    EncryptionKeyScience: 2
-    EncryptionKeySecurity: 2
-    EncryptionKeyService: 4
+#LPP
+    TechnicalAssistantPDA: 3
+    EngineerPDA: 3
+    SecurityCadetPDA: 3
+    SecurityPDA: 3
+    LPPSecurityEngineerPDA: 3
+    BrigmedicPDA: 3
+    CargoPDA: 3
+    MailCarrierPDA: 3
+    SalvagePDA: 3
+    MedicalInternPDA: 3
+    PsychologistPDA: 3
+    MedicalPDA: 3
+    ChemistryPDA: 3
+    ResearchAssistantPDA: 3
+    SciencePDA: 3
+    ForensicMantisPDA: 3
+    LPPExpeditorPDA: 3
+    ChaplainPDA: 3
+    RoboticsPDA: 3

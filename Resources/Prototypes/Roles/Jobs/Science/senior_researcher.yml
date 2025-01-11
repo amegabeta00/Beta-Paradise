@@ -3,7 +3,6 @@
   name: job-name-senior-researcher
   description: job-description-senior-researcher
   playTimeTracker: JobSeniorResearcher
-  setPreference: false # DeltaV - Disable Senior Roles round start selection
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
@@ -11,10 +10,15 @@
   startingGear: SeniorResearcherGear
   icon: "JobIconSeniorResearcher"
   supervisors: job-supervisors-rd
+  canBeAntag: false
   access:
   - Research
+  - Gateway #LPP
 #  - Robotics
   - Maintenance
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: SeniorResearcherGear

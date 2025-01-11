@@ -18,6 +18,7 @@
 - type: Interaction
   id: WaveAt
   parent: [BaseHands, BaseGlobal]
+  icon: /Textures/Interface/Alerts/mood.rsi/mood5.png # < Tweak MrDarkSide >
   priority: 3
   requiresCanInteract: false
   contactInteraction: false
@@ -33,38 +34,10 @@
   action:
     !type:NoOpAction
 
-- type: Interaction
-  id: Hug
-  parent: [BaseGlobal, BaseHands]
-  priority: 2
-  #icon: /Textures/Interface/Actions/hug.png
-  delay: 0.7
-  range: {max: 1}
-  hideByRequirement: true
-  requirement:
-    !type:MobStateRequirement
-    inverted: true
-  action:
-    # TODO: this should pull the target closer or sumth, but I need to code that action first
-    !type:NoOpAction
-
-- type: Interaction
-  id: Pet
-  parent: [BaseGlobal, BaseHands]
-  priority: 1
-  #icon: /Textures/Interface/Actions/hug.png
-  delay: 0.4
-  range: {max: 1}
-  hideByRequirement: true
-  requirement:
-    !type:MobStateRequirement
-    inverted: true
-  action:
-    !type:NoOpAction
-
 # Knocking on the target - windows, doors, etc.
 - type: Interaction
   id: KnockOn
+  icon: /Textures/Interface/Alerts/mood.rsi/mood5.png # < Tweak MrDarkSide >
   parent: BaseHands
   priority: 20
   effectSuccess:
@@ -77,6 +50,7 @@
 - type: Interaction
   id: Rattle
   parent: BaseHands
+  icon: /Textures/Interface/Alerts/mood.rsi/mood5.png # < Tweak MrDarkSide >
   priority: 20
   effectSuccess:
     popup: VisibleNoChat

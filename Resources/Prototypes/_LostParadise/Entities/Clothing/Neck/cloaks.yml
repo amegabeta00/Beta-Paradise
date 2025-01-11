@@ -1,69 +1,5 @@
 - type: entity
   parent: ClothingNeckBase
-  id: LPPsecuritycloak
-  name: security cloak
-  description: Police brutality!
-  components:
-  - type: Sprite
-    sprite: _LostParadise/Clothing/OuterClothing/Cloak/securitycloak.rsi
-
-- type: entity
-  parent: ClothingNeckBase
-  id: LPPScientificcloak
-  name: Scientific cloak
-  description: Traces of all the scientific stories of the station are visible on this cloak, you will not be an exception.
-  components:
-  - type: Sprite
-    sprite: _LostParadise/Clothing/OuterClothing/Cloak/scientificcloak.rsi
-  - type: ToggleableClothing
-    clothingPrototype: LPPClothingHeadHatHoodScientificCloak
-    slot: head
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
-      storagebase: !type:Container
-        ents: []
-
-- type: entity
-  parent: ClothingHeadBase
-  id: LPPClothingHeadHatHoodScientificCloak
-  name: Scientific cloak hood
-  description: A hood of a Scientific cloak.ы
-  components:
-  - type: Sprite
-    sprite: _LostParadise/Clothing/OuterClothing/Cloak/scientificcloakhel.rsi
-  - type: Clothing
-    sprite: _LostParadise/Clothing/OuterClothing/Cloak/scientificcloakhel.rsi
-
-- type: entity
-  parent: ClothingNeckBase
-  id: LPPmedicalcloak
-  name: medical cloak
-  description: Only the best doctors deserve to wear this raincoat, you are clearly an exception.
-  components:
-  - type: Sprite
-    sprite: _LostParadise/Clothing/OuterClothing/Cloak/medicalcloak.rsi
-
-- type: entity
-  parent: ClothingNeckBase
-  id: LPPengineerscloak
-  name: engineer's cloak
-  description: A magnificent engineering cloak, rumor has it that it protects against fire, go and test it.
-  components:
-  - type: Sprite
-    sprite: _LostParadise/Clothing/OuterClothing/Cloak/engineeringcloak.rsi
-
-- type: entity
-  parent: ClothingNeckBase
-  id: LPPCargocloak
-  name: Cargo cloak
-  description: You've made more expeditions for this cloak than you can count.
-  components:
-  - type: Sprite
-    sprite: _LostParadise/Clothing/OuterClothing/Cloak/Cargocloak.rsi
-
-- type: entity
-  parent: ClothingNeckBase
   id: LPParbitercloak
   name: Arbiter cloak
   description: An expensive raincoat of an unknown company with a fur collar. Soft fur and silk of the highest quality. Gold is visible between the threads. Luxury.
@@ -177,8 +113,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: LPPCloakLeaderNPZ
-  name: плащ лидера НПЗ
-  description: И пусть ваш плащ не замарается в крови ксеносов, стирка дорого обходится между прочем.
+  name: Cloak of NPZ leader
+  description: And don't let your cloak get dirty in the blood of xenos, washing is expensive, by the way.
   components:
     - type: Sprite
       sprite: _LostParadise/Clothing/Neck/NPZ/upgneckleader.rsi
@@ -186,8 +122,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: LPPCloakNPZ
-  name: плащ НПЗ
-  description: Плащ для стильного развивания на ветру, пока вы будете унижать жалких ксеносов.
+  name: Cloak NPZ
+  description: A cloak for stylish smashing in the wind while you humiliate the pathetic xenos.
   components:
     - type: Sprite
       sprite: _LostParadise/Clothing/Neck/NPZ/upgneck.rsi
@@ -195,27 +131,26 @@
 - type: entity
   parent: ClothingNeckBase
   id: LPPCloakAdmiralNPZ
-  name: плащ адмирала НПЗ
-  description: Плащ для пафосного скидывания, чтобы показать всем ваши медали и ордена!
+  name: Cloak of NPZ admiral
+  description: A cloak for pretentious throwing off to show everyone your medals and decorations!
   components:
     - type: Sprite
       sprite: _LostParadise/Clothing/Neck/NPZ/upgneckadmiral.rsi
 
 - type: entity
   parent: ClothingNeckBase
-  id: LPPCloakJapaneese
-  suffix: СПОНСОР
-  name: накидка в японском стиле
-  description: Kore yon deru hito wa bakadayo.
-  components:
-    - type: Sprite
-      sprite: _LostParadise/Clothing/Neck/Cloaks/Monorich.rsi
-
-- type: entity
-  parent: ClothingNeckBase
   id: LPPCloakMantleNPZ
-  name: накидка НПЗ
-  description: Мы торопимся или действуем скрытно?
+  name: Cape NPZ
+  description: Are we in a hurry or are we acting stealthy?
   components:
     - type: Sprite
       sprite: _LostParadise/Clothing/Neck/NPZ/NPZmantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPADJUCloak
+  name: The Adjutant's Cloak
+  description: The blue cloak of the adjutant, breathes warmth and bureaucracy when wearing it.
+  components:
+  - type: Sprite
+    sprite: _LostParadise/Clothing/Neck/Cloaks/LPPADJUCloak.rsi

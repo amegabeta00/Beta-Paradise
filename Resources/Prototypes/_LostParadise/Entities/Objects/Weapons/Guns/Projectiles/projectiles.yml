@@ -19,7 +19,7 @@
   id: LPPBulletCharge
   name: syndie charge bolt
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Marks a target for additional damage.
   components:
   - type: Reflective
@@ -54,7 +54,7 @@
   id: LPPBulletPibodi
   name: Pibodi Bullet
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Not too bad, but you still don't want to get hit by it.
   components:
   - type: Reflective
@@ -77,12 +77,11 @@
   - type: TimedDespawn
     lifetime: 1
 
-
 - type: entity
   id: LPPBecbowarrow
   name: ecbowshot
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Not too bad, but you still don't want to get hit by it.
   components:
   - type: Reflective
@@ -104,10 +103,10 @@
     knockdownAmount: 4
 
 - type: entity
-  id: BulletCutter
+  id: LPPBulletCutter
   name: Cutter bolt
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Not too bad, but you still don't want to get hit by it.
   components:
   - type: Reflective
@@ -128,12 +127,27 @@
   # Короткий срок пули
   - type: TimedDespawn
     lifetime: 0.2
-#
+
+- type: hitscan
+  id: LPPRedMediumLightLaser
+  damage:
+    types:
+      Heat: 13
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_laser
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: beam
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_laser
+
 # - type: entity
 #   name : Cutter bolt
-#   id: BulletCutter2
+#   id: LPPBulletCutter2
 #   parent: BaseBullet
-#   noSpawn: true
+#   categories: [ HideSpawnMenu ]
 #   components:
 #   - type: Reflective
 #     reflective:
@@ -161,27 +175,27 @@
 #         - Impassable
 #         - BulletImpassable
 #       fly-by: *flybyfixture
-  # - type: Ammo
-  # - type: StaminaDamageOnCollide
-  #   damage: 13
-  # - type: Projectile
-  #   impactEffect: BulletImpactEffectDisabler
-  #   # deleteOnCollide: false
-  #   damage:
-  #     types:
-  #       Heat: 5
-  #       Slash: 8
-    # soundHit:
-    #   path: "/Audio/_LostParadise/Weapons/Guns/Gunshots/ion_hit_1.ogg"
-  # - type: TimedDespawn
-  #   lifetime: 0.4
-  # - type: GatheringProjectile
-#
+#   - type: Ammo
+#   - type: StaminaDamageOnCollide
+#     damage: 13
+#   - type: Projectile
+#     impactEffect: BulletImpactEffectDisabler
+#     # deleteOnCollide: false
+#     damage:
+#       types:
+#         Heat: 5
+#         Slash: 8
+#     soundHit:
+#       path: "/Audio/_LostParadise/Weapons/Guns/Gunshots/ion_hit_1.ogg"
+#   - type: TimedDespawn
+#     lifetime: 0.4
+#   - type: GatheringProjectile
+
 # - type: entity
 #   name : battlecutter1
 #   id: battlecuttershot
 #   parent: BaseBullet
-#   noSpawn: true
+#   categories: [ HideSpawnMenu ]
 #   components:
 #   - type: Reflective
 #     reflective:
@@ -190,11 +204,11 @@
 #     sound:
 #       collection: EnergyMiss
 #       params:
-#         volume: 5
+#         volume: 6
 #   - type: Sprite
 #     sprite: _LostParadise/Objects/Weapons/Guns/Projectiles/battlecutter.rsi
 #     layers:
-#     - state: ion
+#     - state: omnilaser
 #       shader: unshaded
 #   - type: Physics
 #   - type: Fixtures
@@ -215,3 +229,45 @@
 #       types:
 #         Blunt: 5
 #         Slash: 10
+#     soundHit:
+#       collection: WeakHit
+#   - type: IgniteOnCollide
+#     fireStacks: 0.2
+
+- type: entity
+  id: LPPNail
+  name: Nail
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Reflective
+    reflective:
+      - NonEnergy
+  - type: Sprite
+    noRot: false
+    sprite: _LostParadise/Objects/Weapons/Guns/Projectiles/Nail.rsi
+    layers:
+    - state: nail
+  - type: Projectile
+    impactEffect: BulletImpactEffect
+    damage:
+      types:
+        Piercing: 10
+        Poison: 1
+
+- type: hitscan
+  id: LPPGauss
+  damage:
+    types:
+      Piercing: 35
+      Heat: 25
+  muzzleFlash:
+    sprite: _LostParadise/Objects/Weapons/Guns/Projectiles/gauss.rsi
+    state: muzzle_gauss
+  travelFlash:
+    sprite: _LostParadise/Objects/Weapons/Guns/Projectiles/gauss.rsi
+    state: gauss
+  impactFlash:
+    sprite: _LostParadise/Objects/Weapons/Guns/Projectiles/gauss.rsi
+    state: impact_gauss

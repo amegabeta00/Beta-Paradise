@@ -14,8 +14,6 @@
     - !type:CharacterPlaytimeRequirement
       tracker: JobProsecutor
       min: 36000 # 10 hours
-
-
   startingGear: ClerkGear
   icon: "JobIconClerk"
   requireAdminNotify: true
@@ -25,6 +23,10 @@
   - Justice
   - Security
   - Maintenance
+  - Lawyer
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: ClerkGear

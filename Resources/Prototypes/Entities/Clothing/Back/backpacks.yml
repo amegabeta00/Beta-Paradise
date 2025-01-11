@@ -23,8 +23,8 @@
         ents: []
   - type: UserInterface
     interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   # to prevent bag open/honk spam
   - type: UseDelay
     delay: 0.5
@@ -57,6 +57,16 @@
       collection: IanBark
 
 - type: entity
+  parent: ClothingBackpackIan
+  id: ClothingBackpackIanFilled
+  name: Ian's backpack
+  description: Sometimes he wears it.
+  components:
+  - type: StorageFill
+    contents:
+      - id: Flash
+
+- type: entity
   parent: ClothingBackpack
   id: ClothingBackpackSecurity
   name: security backpack
@@ -68,8 +78,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackBrigmedic
-  name: corpsman backpack # DeltaV - rename brig medic to corpsman
-  description: It's a very sterile backpack.
+  name: brigmedic backpack
+  description: Very sterile backpack
   components:
   - type: Sprite
     sprite: DeltaV/Clothing/Back/Backpacks/brigmedic.rsi # DeltaV - resprite

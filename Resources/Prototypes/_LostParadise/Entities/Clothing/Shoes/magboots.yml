@@ -9,12 +9,9 @@
     state: icon
   - type: Clothing
     sprite: _LostParadise/Clothing/Shoes/Boots/power_boots.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsAdvanced
   - type: ClothingSpeedModifier
     walkModifier: 0.94
     sprintModifier: 0.94
-    enabled: false
   - type: NoSlip
   - type: Tag
     tags:
@@ -34,12 +31,9 @@
     state: icon
   - type: Clothing
     sprite: _LostParadise/Clothing/Shoes/Boots/para_magboots.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsAdvanced
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
-    enabled: false
   - type: NoSlip
   - type: Tag
     tags:
@@ -59,12 +53,9 @@
     state: icon
   - type: Clothing
     sprite: _LostParadise/Clothing/Shoes/Boots/atmos_magboots.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsAdvanced
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
-    enabled: false
   - type: NoSlip
   - type: Tag
     tags:
@@ -76,20 +67,38 @@
 - type: entity
   parent: ClothingShoesBootsMag
   id: LPPClothingShoesBootsMagNPZ
-  name: магитные сапоги НПЗ
-  description: Стандартизированные магнитные сапоги от военно-исследовательских сил Независимого Правительства Земли.
+  name: NPZ magboots
+  description: Standardized magnetic boots from the military research forces of the Independent Government of Earth.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Shoes/Boots/NPZmagboots.rsi
     state: icon
   - type: Clothing
     sprite: _LostParadise/Clothing/Shoes/Boots/NPZmagboots.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsAdvanced
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
-    enabled: false
+  - type: NoSlip
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: StaticPrice
+    price: 450
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: LPPClothingShoesBootsMagHunter
+  name: magboots of carp hunter
+  description: Commercial magnetic boots for those who prefer to hunt in zero gravity or in low gravity.
+  components:
+  - type: Sprite
+    sprite: _LostParadise/Clothing/Shoes/Boots/huntermagboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _LostParadise/Clothing/Shoes/Boots/huntermagboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: NoSlip
   - type: Tag
     tags:

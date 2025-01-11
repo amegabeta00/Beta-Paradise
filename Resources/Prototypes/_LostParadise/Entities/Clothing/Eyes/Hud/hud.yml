@@ -1,15 +1,14 @@
 - type: entity
-  id: ShowSecurityIcons
+  parent: ShowSecurityIcons
+  id: LPPShowSecurityIcons
   abstract: true
-  noSpawn: true
-  components:
-  - type: ShowSecurityIcons
+  categories: [ HideSpawnMenu ]
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons]
+  parent: [ClothingEyesBase, LPPShowSecurityIcons]
   id: LPPBlackHudGlasses
-  name: солнцезащитные очки с визором
-  description: Полезно как для безопасности, так и для каргонии.
+  name: Sunglasses with HUD
+  description: Useful for Security and Cargo.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Eyes/Glasses/blackhudglasses.rsi
@@ -20,10 +19,10 @@
     protectionTime: 5
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons]
+  parent: [ClothingEyesBase, LPPShowSecurityIcons]
   id: LPPRedHudGlasses
-  name: красные солнцезащитные очки с визором
-  description: Полезно как для безопасности, так и для каргонии.
+  name: Red sunglasses with HUD
+  description: Useful for Security and Cargo.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Eyes/Glasses/redhudglasses.rsi
@@ -34,10 +33,10 @@
     protectionTime: 5
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons]
+  parent: [ClothingEyesBase, LPPShowSecurityIcons]
   id: LPPBlueHudGlasses
-  name: синие солнцезащитные очки с визором
-  description: Полезно как для безопасности, так и для каргонии.
+  name: Blue sunglasses with HUD
+  description: Useful for Security and Cargo.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Eyes/Glasses/bluehudglasses.rsi
@@ -65,27 +64,30 @@
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons]
-  id: LPPAVDEyeshud
-  name: визор АВД
-  description: Это визор АВД
+  id: LPPClothingEyesHudSecEng
+  name: Security Engineer HUD
+  description: The HUD model is a combination of an optical meson scanner and a security HUD. Protects the eyes.
   components:
   - type: Sprite
-    sprite: _LostParadise/Clothing/Eyes/HUD/avd.rsi
+    sprite: _LostParadise/Clothing/Eyes/HUD/SecEngHUD.rsi
   - type: Clothing
-    sprite: _LostParadise/Clothing/Eyes/HUD/avd.rsi
-  - type: FlashImmunity
+    sprite: _LostParadise/Clothing/Eyes/HUD/SecEngHUD.rsi
   - type: EyeProtection
-    protectionTime: 5
+  - type: FlashImmunity
+  - type: Tag
+    tags:
+    - HudSecurity
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons]
-  id: LPPMagistrateEyeshud
-  name: визор Судьи
-  description: Это визор Судьи
+  id: LPPNPZEyehud
+  name: NPZ HUD
+  description: The HUD of the NPZ, with built-in additional elements such as protection from bright flashes, as well as, in connection with the latest cooperation measures between the NPZ and NT, the built-in database of NanoTraisen to identify ranks and criminals at the corporation's facilities.
   components:
   - type: Sprite
-    sprite: _LostParadise/Clothing/Eyes/HUD/magistrate.rsi
+    sprite: _LostParadise/Clothing/Eyes/HUD/upgHUD.rsi
   - type: Clothing
-    sprite: _LostParadise/Clothing/Eyes/HUD/magistrate.rsi
+    sprite: _LostParadise/Clothing/Eyes/HUD/upgHUD.rsi
   - type: FlashImmunity
   - type: EyeProtection
+    protectionTime: 5

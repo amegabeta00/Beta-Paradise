@@ -11,13 +11,7 @@
       "name": "Brigmedic"
     },
     {
-      "name": "IAA"
-    },
-    {
       "name": "Blueshield"
-    },
-    {
-      "name": "Magistrate"
     },
     {
       "name": "LPPParamedic"
@@ -38,7 +32,25 @@
       "name": "Expeditor"
     },
     {
-      "name": "LPPSecurityEnginer"
+      "name": "LPPSecurityEngineer"
+    },
+    {
+      "name": "Passenger"
+    },
+    {
+      "name": "NoId"
+    },
+    {
+      "name": "Prisoner"
+    },
+    {
+      "name": "Geneticist"
+    },
+    {
+      "name": "Lawyer"
+    },
+    {
+      "name": "Nanotrasen"
     }
   ]
 }

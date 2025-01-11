@@ -2,16 +2,18 @@ name: RSI Validator
 
 on:
   push:
-    branches: [ staging, trying ]
+    branches: [ master, staging, trying ]
+    paths:
+      - '**.rsi/**'
   merge_group:
   pull_request:
     paths:
-    - '**.rsi/**'
+      - '**.rsi/**'
 
 jobs:
   validate_rsis:
     name: Validate RSIs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3.6.0
       - name: Setup Submodule

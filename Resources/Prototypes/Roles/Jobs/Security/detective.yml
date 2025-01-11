@@ -4,6 +4,8 @@
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:
+  - !type:CharacterHeightRequirement
+    min: 160
   - !type:CharacterDepartmentTimeRequirement
     department: Security
     min: 36000 # DeltaV - 10 hours
@@ -26,19 +28,19 @@
 - type: startingGear
   id: DetectiveGear
   equipment:
+    neck: ClothingBeltHolsterFilled
     jumpsuit: ClothingUniformJumpsuitDetective
-    back: ClothingBackpackSecurityFilledDetective
+    back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatFedoraBrown
     outerClothing: ClothingOuterVestDetective
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltHolsterFilled
     socks: LPPClothingUnderSocksNorm
     underwear: LPPBoxer
   underwear: LPPBriefs
   breast: LPPBraAltWhite
   innerClothingSkirt: ClothingUniformJumpskirtDetective
-  satchel: ClothingBackpackSatchelSecurityFilledDetective
-  duffelbag: ClothingBackpackDuffelSecurityFilledDetective
+  satchel: ClothingBackpackSatchelSecurity
+  duffelbag: ClothingBackpackDuffelSecurity

@@ -17,6 +17,17 @@
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
+# Syndicate Operative Outfit - Civilian
+- type: startingGear
+  id: SyndicateOperativeGearCivilian
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    back: ClothingBackpackDuffelSyndicate
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlack
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+
 #Space Ninja Outfit
 - type: startingGear
   id: SpaceNinjaGear
@@ -58,42 +69,6 @@
     belt: ClothingBeltMilitaryWebbingMedFilled
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
 
-# Syndicate Operative Outfit - Monkey
-- type: startingGear
-  id: SyndicateOperativeGearMonkey
-  equipment:
-    head: ClothingHeadHatOutlawHat
-    jumpsuit: ClothingUniformJumpsuitOperative
-    mask: CigaretteSyndicate
-  innerClothingSkirt: ClothingUniformJumpsuitOperative
-
-# Syndicate Operative Outfit - Barratry
-- type: startingGear
-  id: SyndicateOperativeGearExtremelyBasic
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitOperative
-    back: ClothingBackpackDuffelSyndicateOperative
-    shoes: ClothingShoesBootsCombatFilled
-    gloves: ClothingHandsGlovesColorBlack
-  innerClothingSkirt: ClothingUniformJumpsuitOperative
-  satchel: ClothingBackpackDuffelSyndicateOperative
-  duffelbag: ClothingBackpackDuffelSyndicateOperative
-
-#Syndicate Operative Outfit - Basic
-- type: startingGear
-  id: SyndicateOperativeGearBasic
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitOperative
-    back: ClothingBackpackDuffelSyndicateOperative
-    ears: ClothingHeadsetAltSyndicate
-    gloves: ClothingHandsGlovesCombat
-    shoes: ClothingShoesBootsCombatFilled
-    pocket1: BaseUplinkRadio40TC
-    id: SyndiPDA
-  innerClothingSkirt: ClothingUniformJumpsuitOperative
-  satchel: ClothingBackpackDuffelSyndicateOperative
-  duffelbag: ClothingBackpackDuffelSyndicateOperative
-
 #Syndicate Operative Outfit - Full Kit
 - type: startingGear
   id: SyndicateOperativeGearFull
@@ -104,12 +79,9 @@
     eyes: ClothingEyesHudSyndicate
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndie
     shoes: ClothingShoesBootsCombatFilled
     id: SyndiPDA
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio40TC
-    belt: ClothingBeltMilitaryWebbing
   innerClothingSkirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -125,12 +97,10 @@
     ears: ClothingHeadsetAltSyndicate
     neck: SyndicateWhistle
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndieCommander
     shoes: ClothingShoesBootsCombatFilled
     id: SyndiPDA
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio40TC
-    belt: ClothingBeltMilitaryWebbing
+    pocket2: LPPRadioSyndicateContract
   #inhand: # DeltaV - Prevent commander spawning with the declaration of war
   #  - NukeOpsDeclarationOfWar
   innerClothingSkirt: ClothingUniformJumpskirtOperative
@@ -144,15 +114,12 @@
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperativeMedic
     mask: ClothingMaskGasSyndicate
-    eyes: ClothingEyesHudSyndicateMed # - Delta-V
+    eyes: ClothingEyesHudSyndicateAgent
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndieMedic
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiAgentPDA
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio40TC
-    belt: ClothingBeltMilitaryWebbingMedFilled
   innerClothingSkirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperativeMedic
   duffelbag: ClothingBackpackDuffelSyndicateOperativeMedic
@@ -273,8 +240,18 @@
 #Head Rev Gear
 - type: startingGear
   id: HeadRevGear
-  equipment:
-    pocket2: Flash
+  storage:
+    back:
+    - Flash
+    - ClothingEyesGlassesSunglasses
+
+#Thief Gear
+- type: startingGear
+  id: ThiefGear
+  storage:
+    back:
+    - ToolboxThief
+    - ClothingHandsChameleonThief
 
 #Gladiator with spear
 - type: startingGear

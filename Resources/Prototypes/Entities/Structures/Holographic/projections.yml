@@ -25,6 +25,9 @@
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+      - NoPaint
 
 - type: entity
   id: HoloFan
@@ -69,7 +72,7 @@
           layer:
             - TableLayer
     - type: TimedDespawn
-      lifetime: 180
+      lifetime: 600 # 10 Минут
     - type: PointLight
       enabled: true
       radius: 3

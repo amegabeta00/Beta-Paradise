@@ -11,7 +11,7 @@ salvage-magnet-resources =
         [OreCoal] Уголь
         [OreQuartz] Кварц
         [OreGold] Золото
-        [OreDiamond] Алмазы
+        [LPPOreDiamond] Алмазы
         [OreSilver] Серебро
         [OrePlasma] Плазма
         [OreUranium] Уран
@@ -49,7 +49,7 @@ salvage-map-proto-Medium1 = Тайник с плазменной ловушко�
 salvage-map-proto-MediumVault1 = Хранилище
 salvage-map-proto-MediumOrchestra = Безмолвный оркестр
 salvage-map-proto-MediumLibraryWreck = Покинутая библиотека
-salvage-map-proto-MediumCargoWreck = Крушение отдела логистики
+salvage-map-proto-MediumCargoWreck = Крушение отдела снабжения
 salvage-map-proto-MediumPirateWreck = Обломок пиратской баржи
 salvage-map-proto-MediumHaulingShuttleWreck = Разрушенный грузовой корабль
 salvage-map-proto-TickColony = Колония космических клещей
@@ -62,7 +62,7 @@ salvage-map-proto-Meatball = Фрикаделька
 salvage-map-proto-VeganMeatball = Веганская фрикаделька
 salvage-map-proto-StationStation = Станция станция
 salvage-map-proto-AsteroidBase = База на астероиде
-salvage-map-proto-RuinCargoBase = Разрушенный склад логистики
+salvage-map-proto-RuinCargoBase = Разрушенный склад снабжения
 salvage-map-proto-SecurityChunk = Кусок отдела охраны
 salvage-map-proto-EngineeringChunk = Кусок инженерного отсека
 salvage-map-proto-OutpostArm = Рукав захваченного аванпоста

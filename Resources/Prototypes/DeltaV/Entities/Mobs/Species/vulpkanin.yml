@@ -47,12 +47,12 @@
         visible: false
       - map: [ "breast" ]
       - map: [ "underwear" ]
-      - map: [ "jumpsuit" ]
-      - map: [ "enum.HumanoidVisualLayers.LHand" ]
-      - map: [ "enum.HumanoidVisualLayers.RHand" ]
       - map: [ "enum.HumanoidVisualLayers.LFoot" ]
       - map: [ "enum.HumanoidVisualLayers.RFoot" ]
       - map: [ "socks" ]
+      - map: [ "jumpsuit" ]
+      - map: [ "enum.HumanoidVisualLayers.LHand" ]
+      - map: [ "enum.HumanoidVisualLayers.RHand" ]
       - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
         color: "#ffffff"
         sprite: Objects/Misc/handcuffs.rsi
@@ -62,16 +62,17 @@
       - map: [ "gloves" ]
       - map: [ "shoes" ]
       - map: [ "ears" ]
+      - map: [ "enum.HumanoidVisualLayers.Tail" ]
       - map: [ "outerClothing" ]
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "neck" ]
       - map: [ "back" ]
+      - map: [ "enum.HumanoidVisualLayers.Face" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ]
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
-      - map: [ "enum.HumanoidVisualLayers.Tail" ]
       - map: [ "mask" ]
       - map: [ "head" ]
       - map: [ "pocket1" ]
@@ -104,6 +105,9 @@
   - type: Tag
     tags:
     - HidesTail
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
   - type: ScentTracker
   - type: Flashable
     eyeDamageChance: 0.3
@@ -112,10 +116,10 @@
   - type: Wagging
   - type: LanguageKnowledge
     speaks:
-    - GalacticCommon
+    - TauCetiBasic
     - Canilunzt
     understands:
-    - GalacticCommon
+    - TauCetiBasic
     - Canilunzt
   - type: ConsumeDelayModifier
     foodDelayMultiplier: 0.5
@@ -128,7 +132,7 @@
   name: Vulpkanin Dummy
   parent: MobHumanDummy
   id: MobVulpkaninDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: A dummy vulpkanin meant to be used in character setup.
   components:
   - type: HumanoidAppearance

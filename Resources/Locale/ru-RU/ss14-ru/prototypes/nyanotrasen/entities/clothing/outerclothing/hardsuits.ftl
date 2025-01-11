@@ -1,10 +1,14 @@
-ent-ClothingOuterHardsuitMystagogue = скафандр Научного Директора
-    .desc = Легкий защитный костюм, оснащенный шлемом с первой в галактике псионической системой пропуска.
-ent-ClothingOuterHardsuitSyndieReverseEngineered = боевой скафандр SA-122
-    .suffix = перепрограммирован
-    .desc = { ent-ClothingOuterHardsuitSyndie.desc }
-ent-ClothingOuterHardsuitJuggernautReverseEngineered = боевой скафандр SA-126
-    .desc = Костюм, изготовленный отделом специальных закупок Nanotrasen, отличается повышенной эластичностью.
-    .suffix = перепрограммирован
-ent-ClothingOuterHardsuitERTCentcomm = Скафандр ЦентКом
-    .desc = { ent-ClothingOuterHardsuitERTLeader.desc }
+ent-ClothingOuterHardsuitMystagogue = Скафандр Научного Директора
+    .desc = { ent-ClothingOuterHardsuitRd.desc }
+ent-ClothingOuterHardsuitSyndieReverseEngineered = Тактический скафандр NTSA-122
+    .desc = Скафандр, созданный департаментом особых приобретений НаноТрейзен. Отметки на скафандре соотвествуют средней степени защаты от всех видов воздействий.
+    .suffix = Реконструирован
+ent-ClothingOuterHardsuitJuggernautReverseEngineered = Тактический скафандр NTSA-126
+    .desc =
+        Скафандр, созданный департаментом особых приобретений НаноТрейзен, в основе которого лежит модель "Juggernaut".
+        Отлично защищает от большинства видов воздействий. Выглядит крайне тяжёлым.
+    .suffix = Реконструирован
+ent-ClothingOuterHardsuitERTCentcomm = Тактический скафандр NT-444c - "Ophanim"
+    .desc =
+        Крайне продвинутый тактический скафандр предназначенный для офицеров ЦК, имеет логотип НаноТрейзен и серийный номер.
+        Броня скафандра укреплена сверхпрочным сплавом, помимо этого он почти ничего не весит.

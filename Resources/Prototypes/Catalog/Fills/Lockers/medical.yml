@@ -175,6 +175,8 @@
   components:
   - type: StorageFill
     contents:
+      - id: HandheldGPSBasic
+      - id: HandheldCrewMonitor
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
       - id: ClothingUniformJumpsuitParamedic
@@ -197,6 +199,7 @@
   - type: StorageFill
     contents:
       - id: LPPHardsuitAssaultParamedic #LPP
+      - id: LPPClothingShoesBootsMagParamed #LPP
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
       - id: ClothingOuterWinterPara

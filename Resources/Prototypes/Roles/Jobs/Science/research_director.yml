@@ -5,11 +5,23 @@
   playTimeTracker: JobResearchDirector
   antagAdvantage: 6 # DeltaV - Reduced TC: Head of Staff
   requirements:
+    - !type:CharacterAgeRequirement
+      min: 25
+      max: 80
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
       min: 54000 # DeltaV - 15 hours
     - !type:CharacterOverallTimeRequirement
       min: 72000 # DeltaV - 20 hours
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - IPC
+        - !type:CharacterTraitRequirement
+          traits:
+            - AnomalousPositronics
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
@@ -24,11 +36,13 @@
   - Mantis # DeltaV - Mantis, see Resources/Prototypes/DeltaV/Access/epistemics.yml
   - Chapel # DeltaV - Chaplain is in Epistemics
   - Cryogenics
+  - Gateway #LPP
   special: # Nyanotrasen - Mystagogue can use the Bible
   - !type:AddComponentSpecial
     components:
 #    - type: BibleUser # Nyano - Lets them heal with bibles
     - type: Psionic # Nyano - They start with telepathic chat
+      powerSlots: 3
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
@@ -39,6 +53,8 @@
           - DispelPower
           - MetapsionicPower
           - TelepathyPower
+      - type: SurgerySpeedModifier # LPP
+        SpeedModifier: 2.0
 
 - type: startingGear
   id: ResearchDirectorGear
@@ -56,3 +72,6 @@
   innerClothingSkirt: ClothingUniformJumpskirtResearchDirector
   satchel: ClothingBackpackSatchelResearchDirectorFilled
   duffelbag: ClothingBackpackDuffelResearchDirectorFilled
+  # storage:
+  #   back:
+  #   - LPPTelebaton

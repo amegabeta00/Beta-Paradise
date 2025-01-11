@@ -5,6 +5,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: LPPBookSpaceLaw
       - id: FlashlightSeclite
       - id: WeaponDisabler
         prob: 0.3
@@ -30,7 +31,10 @@
       - id: LPPWeaponPistolPF20
       - id: LPPMagazinePistolPF20lethal
       - id: LPPMagazinePistolPF20Rubber
-        prob: 0.5 #Кибербуллинг метаюзеров :D
+      - id: LPPBoxFolderSecretRed
+      - id: LPPBoxFolderSecDoc
+        prob: 0.5
+      - id: LPPHOSUplinkShop #На будущее, будет хайриском
 
 - type: entity
   id: LockerWardenFilled
@@ -39,6 +43,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: LPPBookSpaceLaw
       - id: FlashlightSeclite
       - id: WeaponDisabler
         prob: 0.3
@@ -63,7 +68,12 @@
       - id: LPPWeaponPistolPF20
       - id: LPPMagazinePistolPF20lethal
       - id: LPPMagazinePistolPF20Rubber
-        prob: 0.5 #Кибербуллинг метаюзеров :D
+      - id: LPPHOSUplinkShop
+      # -< DarkSide
+      - id: LPPBoxFolderSecretRed
+      - id: LPPBoxFolderSecDoc
+        prob: 0.5
+      # - >
 
 - type: entity
   id: LockerSecurityFilled
@@ -102,6 +112,7 @@
       - id: ClothingHeadsetSecurity
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
+      - id: LPPBookSpaceLaw
       - id: WeaponMeleeNeedle
         prob: 0.1
       - id: ClothingEyesHudSecurity
@@ -116,6 +127,12 @@
         prob: 0.01
       - id: ClothingMaskClown
         prob: 0.1
+      # -< DarkSide
+      - id: LPPBoxFolderSecDoc
+        prob: 0.5
+      # - >
+      - id: WeaponDisabler
+        prob: 0.33
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -137,6 +154,7 @@
 ##      - id: ClothingUniformJumpskirtOfLife # DeltaV - nah
 ##        prob: 0.1
       - id: HandheldGPSBasic # Delta V - added it for tracking the implant tracker pop up.
+      - id: HandheldCrewMonitor # He need it. LostParadise
       - id: MedkitFilled
       - id: MedkitCombatFilled
         prob: 0.6
@@ -152,6 +170,7 @@
         prob: 0.7
 ##      - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse # DeltaV - why
 ##        prob: 0.15
+      - id: LPPCombatHypospray
       - id: LunchboxSecurityFilledRandom # Delta-v Lunchboxes!
         prob: 0.3
 
@@ -185,6 +204,7 @@
         prob: 0.3
       - id: MedkitBurnFilled
         prob: 0.7
+      - id: LPPCombatHypospray
       - id: LunchboxSecurityFilledRandom # Delta-v Lunchboxes!
         prob: 0.3
 
@@ -216,6 +236,11 @@
         prob: 0.3
 #LPP
       - id: LPPClothingOuterDetectiveHardsuit
+      # -< DarkSide
+      - id: LPPBoxFolderSecDoc
+        amount: 2
+        prob: 0.5
+      # - >
 
 - type: entity
   id: ClosetBombFilled

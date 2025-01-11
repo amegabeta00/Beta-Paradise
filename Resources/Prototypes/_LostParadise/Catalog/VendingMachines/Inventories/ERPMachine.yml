@@ -44,8 +44,8 @@
     LPPWhips: 3
     LPPHypnogogglesPink: 3
     LPPHypnogogglesTeal: 3
-    ClothingLPPKblindfoldPink: 3
-    ClothingLPPKblindfoldTeal: 3
+    LPPClothingKblindfoldPink: 3
+    LPPClothingKblindfoldTeal: 3
     LPPMaskCyan: 3
     LPPMaskPink: 3
     LPPJanimaid: 3
@@ -61,6 +61,7 @@
     LPPClothingNeckBellCollarPurple: 3
     LPPClothingNeckBellCollarOrange: 3
     LPPClothingNeckCollarSpiked: 3
+    LPPClothingNeckCollarHeart: 3 # < DarkSide >
     LPPClothingMaskKinkyMuzzle: 3
     LPPClothingUniformboobasuit: 3
     LPPClothingHeadHatMaid: 3

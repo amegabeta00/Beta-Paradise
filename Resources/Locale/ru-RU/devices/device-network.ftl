@@ -8,7 +8,7 @@ device-frequency-prototype-name-pdas = КПК
 device-frequency-prototype-name-fax = Факс
 device-frequency-prototype-name-basic-device = Базовые устройства
 device-frequency-prototype-name-cyborg-control = Управление киборгами
-device-frequency-prototype-name-robotics-console = Консоль управления робототехникой
+device-frequency-prototype-name-robotics-console = Робототехническая консоль
 # prefixes for randomly generated device addresses
 device-address-prefix-vent = Вент-
 device-address-prefix-scrubber = Скр-
@@ -16,7 +16,7 @@ device-frequency-prototype-name-surveillance-camera-test = Тест подсет
 device-frequency-prototype-name-surveillance-camera-engineering = Камеры (Инженерный)
 device-frequency-prototype-name-surveillance-camera-security = Камеры (Охрана)
 device-frequency-prototype-name-surveillance-camera-science = Камеры (Научный)
-device-frequency-prototype-name-surveillance-camera-supply = Камеры (Логистика)
+device-frequency-prototype-name-surveillance-camera-supply = Камеры (Снабжение)
 device-frequency-prototype-name-surveillance-camera-command = Камеры (Командование)
 device-frequency-prototype-name-surveillance-camera-service = Камеры (Сервисный)
 device-frequency-prototype-name-surveillance-camera-medical = Камеры (Медицинский)
@@ -30,12 +30,10 @@ device-address-prefix-heater = НГР-
 device-address-prefix-freezer = ОХЛ-
 device-address-prefix-volume-pump = ОБН-
 device-address-prefix-smes = СМС-
-#PDAs and terminals
 device-address-prefix-console = Конс-
 device-address-prefix-air-alarm = Возд-
 device-address-examine-message = Адрес устройства: { $address }.
 device-address-prefix-sensor-monitor = МОН-
-#Device net ID names
 device-net-id-private = Частные
 device-net-id-wired = Проводные
 device-net-id-wireless = Беспроводные

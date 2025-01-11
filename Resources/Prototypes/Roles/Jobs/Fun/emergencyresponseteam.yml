@@ -27,7 +27,7 @@
     id: ERTLeaderPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolN1984Nonlethal
+    pocket1: WeaponPistolN1984NonLethal
     pocket2: FlashlightSeclite
 
 - type: startingGear
@@ -44,7 +44,7 @@
     id: ERTLeaderPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolN1984Nonlethal
+    pocket1: WeaponPistolN1984NonLethal
     pocket2: FlashlightSeclite
 
 - type: startingGear
@@ -253,6 +253,12 @@
   - AllAccess
   access:
   - CentralCommand
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: CPRTraining
+    - type: SurgerySpeedModifier # LPP
+      SpeedModifier: 2.0
 
 - type: startingGear
   id: ERTMedicalGear

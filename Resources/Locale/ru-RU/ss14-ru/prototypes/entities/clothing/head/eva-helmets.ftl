@@ -1,15 +1,13 @@
-ent-ClothingHeadHelmetEVA = шлем EVA
+ent-ClothingHeadHelmetEVA = Шлем EVA
     .desc = Старый добрый шлем, предназначенный для внекорабельной деятельности. Известен тем, что вызывает паранойю у сотрудников службы безопасности.
-ent-ClothingHeadHelmetEVALarge = шлем EVA
+ent-ClothingHeadHelmetEVALarge = Шлем EVA
     .desc = Старый добрый шлем, предназначенный для внекорабельной деятельности.
 # Corvax-HiddenDesc-Start
-ent-ClothingHeadHelmetSyndicate = стильный шлем
-    .suffix = Cиндикат
+ent-ClothingHeadHelmetSyndicate = Стильный шлем
+    .suffix = Синдикат
     .desc = Стильный, герметичный, прочный шлем.
 # Corvax-HiddenDesc-End
-ent-ClothingHeadHelmetCosmonaut = шлем космонавта
+ent-ClothingHeadHelmetCosmonaut = Шлем космонавта
     .desc = Древний дизайн, современное производство.
-ent-ClothingHeadHelmetVoidParamed = пустотный шлем медицинского офицера
-    .desc = Пустотный шлем, предназначенный для парамедиков.
-ent-ClothingHeadHelmetAncient = пустотный шлем NTSRA
-    .desc = Древний космический шлем, разработанный по заказу Центком поразделением NTSRA - агентством космических исследований Nanotrasen.
+ent-ClothingHeadHelmetAncient = Пустотный шлем NTSRA
+    .desc = Древний космический шлем, разработанный по заказу Центком поразделением NTSRA - агентством космических исследований НаноТрейзен.

@@ -49,6 +49,9 @@
     - type: Tag
       tags:
       - HidesTail
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
     - type: Vocal
       sounds:
         Male: MaleHuman
@@ -58,19 +61,17 @@
       speciesId: shark
     - type: LanguageKnowledge
       speaks:
-      - GalacticCommon
+      - TauCetiBasic
       understands:
-      - GalacticCommon
-    # # - type: EmotePanel
-    #   race: Shark
+      - TauCetiBasic
     - type: Carriable
 
 - type: entity
   save: false
   name: Shark McHands
   parent: MobHumanDummy
-  id: MobSharkDummy
-  noSpawn: true
+  id: LPPMobSharkDummy
+  categories: [ HideSpawnMenu ]
   description: A dummy shark meant to be used in character setup.
   components:
     - type: HumanoidAppearance

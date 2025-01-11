@@ -1,15 +1,12 @@
 # vocal emotes
 - type: emote
   id: Scream
-  # name: chat-emote-name-scream
+  name: chat-emote-name-scream
   category: Vocal
-  # icon: Interface/Actions/scream.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/scream.png
+  whitelist:
+    components:
+    - Vocal
   chatMessages: ["chat-emote-msg-scream"]
   chatTriggers:
   - scream
@@ -43,22 +40,16 @@
   - орёт
   - орёт.
   - орёт!
-  - визжит
-  - визжит.
-  - визжит!
   # Corvax-Localization-End
 
 - type: emote
   id: Laugh
-  # name: chat-emote-name-laugh
+  name: chat-emote-name-laugh
   category: Vocal
-  # icon: Interface/Emotes/laugh.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/laugh.png
+  whitelist:
+    components:
+    - Vocal
   chatMessages: ["chat-emote-msg-laugh"]
   chatTriggers:
   - laugh
@@ -108,15 +99,12 @@
 
 - type: emote
   id: Honk
-  # name: chat-emote-name-honk
+  name: chat-emote-name-honk
   category: Vocal
-  # icon: Interface/Emotes/honk.png
-  # whitelist:
-  #   requireAll: true
-  #   components:
-  #   - Vocal
-  #   - BorgChassis
-  chatMessages: ["chat-emote-msg-honk"]
+  icon: Interface/Emotes/honk.png
+  whitelist:
+    tags:
+    - SiliconEmotes
   chatTriggers:
   - honk
   - honk.
@@ -138,15 +126,12 @@
 
 - type: emote
   id: Sigh
-  # name: chat-emote-name-sigh
+  name: chat-emote-name-sigh
   category: Vocal
-  # icon: Interface/Emotes/sigh.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/sigh.png
+  whitelist:
+    components:
+    - Vocal
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
   - sigh
@@ -166,15 +151,12 @@
 
 - type: emote
   id: Whistle
-  # name: chat-emote-name-whistle
+  name: chat-emote-name-whistle
   category: Vocal
-  # icon: Interface/Emotes/whistle.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/whistle.png
+  whitelist:
+    components:
+    - Vocal
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
   - whistle
@@ -197,15 +179,12 @@
 
 - type: emote
   id: Crying
-  # name: chat-emote-name-crying
+  name: chat-emote-name-crying
   category: Vocal
-  # icon: Interface/Emotes/cry.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/cry.png
+  whitelist:
+    components:
+    - Vocal
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
   - cry
@@ -236,16 +215,16 @@
 
 - type: emote
   id: Squish
-  # name: chat-emote-name-squish
+  name: chat-emote-name-squish
   category: Vocal
-  # available: false
-  # icon: Interface/Emotes/squish.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  available: false
+  icon: Interface/Emotes/squish.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-squish"]
   chatTriggers:
   - squish
@@ -265,16 +244,16 @@
 
 - type: emote
   id: Chitter
-  # name: chat-emote-name-chitter
+  name: chat-emote-name-chitter
   category: Vocal
-  # available: false
-  # icon: Interface/Emotes/chitter.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  available: false
+  icon: Interface/Emotes/chitter.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-chitter"]
   chatTriggers:
   - chitter
@@ -294,16 +273,16 @@
 
 - type: emote
   id: Squeak
-  # name: chat-emote-name-squeak
+  name: chat-emote-name-squeak
   category: Vocal
-  # available: false
-  # icon: Interface/Emotes/squeak.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  available: false
+  icon: Interface/Emotes/squeak.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-squeak"]
   chatTriggers:
   - squeak
@@ -323,16 +302,16 @@
 
 - type: emote
   id: Click
-  # name: chat-emote-name-click
+  name: chat-emote-name-click
   category: Vocal
-  # available: false
-  # icon: Interface/Emotes/click.png
-  # whitelist:
-  #   components:
-  #   - Vocal
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  available: false
+  icon: Interface/Emotes/click.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-click"]
   chatTriggers:
   - click
@@ -353,15 +332,15 @@
 # hand emotes
 - type: emote
   id: Clap
-  # name: chat-emote-name-clap
+  name: chat-emote-name-clap
   category: Hands
-  # icon: Interface/Emotes/clap.png
-  # whitelist:
-  #   components:
-  #   - Hands
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/clap.png
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-clap"]
   chatTriggers:
   - clap
@@ -388,15 +367,15 @@
 
 - type: emote
   id: Snap
-  # name: chat-emote-name-snap
+  name: chat-emote-name-snap
   category: Hands
-  # icon: Interface/Emotes/snap.png
-  # whitelist:
-  #   components:
-  #   - Hands
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/snap.png
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-snap"] # snaps <{THEIR($ent)}> fingers?
   chatTriggers:
   - snap
@@ -437,15 +416,15 @@
 
 - type: emote
   id: Salute
-  # name: chat-emote-name-salute
+  name: chat-emote-name-salute
   category: Hands
-  # icon: Interface/Emotes/salute.png
-  # whitelist:
-  #   components:
-  #   - Hands
-  # blacklist:
-  #   components:
-  #   - BorgChassis
+  icon: Interface/Emotes/salute.png
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-salute"]
   chatTriggers:
   - salute
@@ -471,10 +450,10 @@
 
 - type: emote
   id: Gasp
-  # name: chat-emote-name-gasp
-  # whitelist:
-  #   components:
-  #   - Respirator
+  name: chat-emote-name-gasp
+  whitelist:
+    components:
+    - Respirator
   chatMessages: ["chat-emote-msg-gasp"]
   chatTriggers:
   - gasp
@@ -489,37 +468,44 @@
 
 - type: emote
   id: DefaultDeathgasp
-  # name: chat-emote-name-deathgasp
-  # icon: Interface/Emotes/deathgasp.png
-  # whitelist:
-  #   components:
-  #   - MobState
-  chatMessages: ["chat-emote-msg-deathgasp"]
+  name: chat-emote-name-deathgasp
+  icon: Interface/Emotes/deathgasp.png
+  whitelist:
+    components:
+    - MobState
+  blacklist:
+    tags:
+    - SiliconEmotes
+  chatMessages: ["emote-deathgasp"]
   chatTriggers:
   - deathgasp
 
 - type: emote
   id: MonkeyDeathgasp
-  # name: chat-emote-name-deathgasp
-  # icon: Interface/Emotes/deathgasp.png
+  name: chat-emote-name-deathgasp
+  icon: Interface/Emotes/deathgasp.png
   chatMessages: ["chat-emote-msg-deathgasp-monkey"]
 
 - type: emote
   id: SiliconDeathgasp
+  name: chat-emote-name-deathgasp
+  icon: Interface/Emotes/deathgasp.png
+  whitelist:
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-deathgasp-silicon"]
   chatTriggers:
   - sdeathgasp
 
 - type: emote
   id: Buzz
-  # name: chat-emote-name-buzz
+  name: chat-emote-name-buzz
   category: Vocal
-  # icon: Interface/Emotes/buzz.png
-  # whitelist:
-  #   requireAll: true
-  #   components:
-  #   - BorgChassis
-  #   - Vocal
+  icon: Interface/Emotes/buzz.png
+  whitelist:
+    tags:
+    - SiliconEmotes
+    - HarpyEmotes
   chatMessages: ["chat-emote-msg-buzz"]
   chatTriggers:
   - buzzing
@@ -548,20 +534,20 @@
 
 - type: emote
   id: Weh
-  # name: chat-emote-name-weh
+  name: chat-emote-name-weh
   category: Vocal
   # icon: Interface/Emotes/weh.png
   chatMessages: [издаёт вех!]
 
 - type: emote
   id: Chirp
-  # name: chat-emote-name-chirp
+  name: chat-emote-name-chirp
   category: Vocal
-  # icon: Interface/Emotes/chirp.png
-  # whitelist:
-  #   requireAll: true
-  #   components:
-  #   - Nymph
+  icon: Interface/Emotes/chirp.png
+  whitelist:
+    requireAll: true
+    components:
+    - Nymph
   chatMessages: ["chat-emote-msg-chirp"]
   chatTriggers:
   - chirp
@@ -583,54 +569,57 @@
   # Corvax-Localization-End
 
 # Machine Emotes
-# - type: emote
-#   id: Beep
-#   name: chat-emote-name-beep
-#   category: Vocal
-#   icon: Interface/Emotes/beep.png
-#   whitelist:
-#     requireAll: true
-#     components:
-#     - BorgChassis
-#     - Vocal
-#   chatMessages: ["chat-emote-msg-beep"]
-#   chatTriggers:
-#     - beep
-#     - beep!
-#     - beep.
-#     - beeps
-#     - beeps.
-#     - beeps!
-#     - beeped
-#     - beeped.
-#     - beeped!
-#     - beeping
-#     - beeping.
-#     - beeping!
-#     # Corvax-Localization-Start
-#     - бип
-#     - бип.
-#     - бип!
-#     # Corvax-Localization-End
+- type: emote
+  id: Beep
+  name: chat-emote-name-beep
+  category: Vocal
+  icon: Interface/Emotes/beep.png
+  whitelist:
+    tags:
+    - SiliconEmotes
+    - HarpyEmotes
+  chatMessages: ["chat-emote-msg-beep"]
+  chatTriggers:
+    - beep
+    - beep!
+    - beep.
+    - beeps
+    - beeps.
+    - beeps!
+    - beeped
+    - beeped.
+    - beeped!
+    - beeping
+    - beeping.
+    - beeping!
+    # Corvax-Localization-Start
+    - бип
+    - бип.
+    - бип!
+    # Corvax-Localization-End
 
 - type: emote
   id: Boop
+  name: chat-emote-name-boop
   category: Vocal
-  chatMessages: [ Буп ]
+  whitelist:
+    tags:
+    - SiliconEmotes
+    - HarpyEmotes
+  chatMessages: [ chat-emote-msg-boop ]
   chatTriggers:
     - boops
     - буп
 
 - type: emote
   id: Chime
-  # name: chat-emote-name-chime
+  name: chat-emote-name-chime
   category: Vocal
-  # icon: Interface/Emotes/chime.png
-  # whitelist:
-  #   requireAll: true
-  #   components:
-  #   - BorgChassis
-  #   - Vocal
+  icon: Interface/Emotes/chime.png
+  whitelist:
+    tags:
+    - SiliconEmotes
+    - HarpyEmotes
   chatMessages: ["chat-emote-msg-chime"]
   chatTriggers:
   - chime
@@ -653,14 +642,13 @@
 
 - type: emote
   id: Buzz-Two
-  # name: chat-emote-name-buzztwo
+  name: chat-emote-name-buzztwo
   category: Vocal
-  # icon: Interface/Emotes/buzztwo.png
-  # whitelist:
-  #   requireAll: true
-  #   components:
-  #   - BorgChassis
-  #   - Vocal
+  icon: Interface/Emotes/buzztwo.png
+  whitelist:
+    tags:
+    - SiliconEmotes
+    - HarpyEmotes
   chatMessages: ["chat-emote-msg-buzzestwo"]
   chatTriggers:
   - buzztwice
@@ -716,14 +704,13 @@
 
 - type: emote
   id: Ping
-  # name: chat-emote-name-ping
+  name: chat-emote-name-ping
   category: Vocal
-  # icon: Interface/Emotes/ping.png
-  # whitelist:
-  #   requireAll: true
-  #   components:
-  #   - BorgChassis
-  #   - Vocal
+  icon: Interface/Emotes/ping.png
+  whitelist:
+    tags:
+    - SiliconEmotes
+    - HarpyEmotes
   chatMessages: ["chat-emote-msg-ping"]
   chatTriggers:
   - ping
@@ -745,8 +732,44 @@
   # Corvax-Localization-End
 
 - type: emote
-  id: Whirr # uncategorized as it is generic
+  id: Whirr
+  name: chat-emote-name-whirr
+  category: Vocal
+  whitelist:
+    tags:
+    - SiliconEmotes
+    - HarpyEmotes
   chatMessages: [ жужит ]
   chatTriggers:
     - whirrs
     - жужит
+
+- type: emote
+  id: Mars
+  name: chat-emote-name-mars
+  category: Vocal
+  whitelist:
+    tags:
+    - ShadowkinEmotes
+    - HarpyEmotes
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [ mars ]
+  chatTriggers:
+    - mars
+
+- type: emote
+  id: Wurble
+  name: chat-emote-name-wurble
+  category: Vocal
+  whitelist:
+    tags:
+    - ShadowkinEmotes
+    - HarpyEmotes
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [ wurble ]
+  chatTriggers:
+    - wurble

@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: LPPClothingOuterHardsuitHunter
-  name: охотничий скафандр
-  description: Скафандр компании GreyTide co., недавно появившиеся на рынке скафандров для нужд гражданских, а так же военных. Серые тона- стиль!
+  name: Hardsuit GRT-42w - "Vadász"
+  description: The spacesuit of the GreyTide co. company, which recently appeared on the market of spacesuits for the needs of civilians as well as the military. Gray tones - the style!
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/OuterClothing/Hardsuits/winterhunter.rsi
@@ -28,5 +28,5 @@
   - type: ExplosionResistance
     damageCoefficient: 0.8
   - type: ToggleableClothing
-    clothingPrototype: LPPClothingMaskHunter
-    slot: mask
+    clothingPrototype: LPPClothingHeadHelmetHunter
+    slot: head

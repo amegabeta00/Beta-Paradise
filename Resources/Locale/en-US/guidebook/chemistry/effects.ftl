@@ -43,7 +43,7 @@ reagent-effect-guidebook-foam-area-reaction-effect =
         *[other] create
     } large quantities of foam
 
-reagent-effect-guidebook-foam-area-reaction-effect =
+reagent-effect-guidebook-smoke-area-reaction-effect =
     { $chance ->
         [1] Creates
         *[other] create
@@ -362,3 +362,12 @@ reagent-effect-guidebook-chem-reroll-psionic =
         [1] Allows
         *[other] allow
     } a chance to get a different psionic power
+
+reagent-effect-guidebook-add-moodlet =
+    modifies mood by {$amount}
+    { $timeout ->
+        [0] indefinitely
+        *[other] for {$timeout} seconds
+    }
+
+reagent-effect-guidebook-purify-evil = Purifies evil powers

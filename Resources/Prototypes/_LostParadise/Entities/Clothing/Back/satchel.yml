@@ -24,7 +24,7 @@
 - type: entity
   parent: ClothingBackpackSatchel
   id: LPPClothingSatchelSecurityEngineer
-  name: hop duffel bag
+  name: sec eng duffel bag
   description: Twice as many handcuffs!
   components:
   - type: Sprite
@@ -47,3 +47,12 @@
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Back/Satchels/expeditor.rsi
+
+- type: entity
+  parent: LPPClothingBackpackSatchelBlueshield
+  id: LPPClothingBackpackSatchelBlueshieldFilled
+  components:
+  - type: StorageFill
+    contents:
+    - id: Flash
+    - id: LPPClothingOuterHardsuitBlueshield

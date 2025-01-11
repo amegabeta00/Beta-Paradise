@@ -285,6 +285,9 @@
       - id: PetRock
         prob: 0.80
         orGroup: Prize
+      - id: PlushieShadowkin
+        prob: 0.80
+        orGroup: Prize
       # Uncommon
       - id: PrizeTicket60
         prob: 0.50
@@ -392,4 +395,6 @@
       - id: ThronglerToy
         prob: 0.30
         orGroup: Prize
-        
+      - id: BwoinkHammer
+        prob: 0.30
+        orGroup: Prize

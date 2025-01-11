@@ -2,6 +2,13 @@
   id: BeingHugged
   moodChange: 3
   timeout: 120
+  category: PositiveInteraction
+
+- type: moodEffect
+  id: BeingPet
+  moodChange: 3
+  timeout: 120
+  category: PositiveInteraction
 
 - type: moodEffect
   id: ArcadePlay
@@ -38,3 +45,10 @@
 - type: moodEffect
   id: TraitSanguine
   moodChange: 15
+
+- type: moodEffect
+  id: HeirloomSecure
+  category: Heirloom
+  moodChange: 5
+  timeout: 60 # A bit of time before they realize it's gone
+  moodletOnEnd: HeirloomLost

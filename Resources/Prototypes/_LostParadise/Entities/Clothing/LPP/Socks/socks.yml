@@ -872,13 +872,3 @@
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Socks/ThinThigh/yellow.rsi
-
-- type: entity
-  parent: LPPClothingUnderwearSocksBase
-  id: LPPCowSocks
-  suffix: СПОНСОР
-  name: коровьи чулки
-  description: Муууу!
-  components:
-  - type: Sprite
-    sprite: _LostParadise/Clothing/Underwear/cowset/cowsocks.rsi

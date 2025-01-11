@@ -1,4 +1,6 @@
 generic-power-initialization-feedback = Я проснулся.
+already-casting = Я не могу использовать более одной силы одновременно.
+no-mana = Я не могу направить достаточно силы.
 # Dispel
 dispel-power-description = Рассеивайте вызванные сущности, такие как фамильяры или силовые стены.
 dispel-power-initialization-feedback = Силы судьбы для меня ничто. Я чувствую, что могу дотянуться до окружающих меня нитей и навязать реальность другим.
@@ -39,6 +41,26 @@ metapsionic-power-metapsionic-feedback = { CAPITALIZE($entity) } взирает 
 psionic-regeneration-power-description = Доведите свой метоболизм до предела что бы ускорить регенерацию.
 psionic-regeneration-power-initialization-feedback = Я смотрю внутрь себя и нахожу источник жизни.
 psionic-regeneration-power-metapsionic-feedback = { CAPITALIZE($entity) } обладает непреодолимой волей к жизни
+# Healing Word
+action-name-healing-word = Слово Исцеления
+action-description-healing-word = Произнесите Меньший Секрет Жизни и восстановите здоровье другого.
+healing-word-power-description = Произнесите Меньший Секрет Жизни и восстановите здоровье другого.
+healing-word-power-initialization-feedback =
+    В начале времен было произнесено слово, которое принесло жизнь в Сферы.
+    Хотя это тяжело для моего разума, этот Секрет теперь известен мне.
+    Мне нужно лишь произнести его.
+healing-word-power-metapsionic-feedback = { CAPITALIZE($entity) } хранит Меньший Секрет Жизни.
+healing-word-begin = { CAPITALIZE($entity) } произносит слово, которое приносит радость и боль тем, кто его слышит.
+# Revivify
+action-name-revivify = Дыхание Жизни
+action-description-revivify = Произнесите Большой Секрет Жизни и верните другого к жизни.
+revivify-power-description = Произнесите Большой Секрет Жизни и верните другого к жизни.
+revivify-power-initialization-feedback =
+    На мгновение моя душа путешествует сквозь время и пространство к началу всего, и там я слышу это.
+    Секрет Жизни во всей его полноте. Я чувствую, как вся моя сущность выгорает изнутри, просто зная это.
+    Сила течет через меня, как могучая река, прося высвободиться простым произнесением слова.
+revivify-power-metapsionic-feedback = { CAPITALIZE($entity) } хранит Большой Секрет Жизни.
+revivify-begin = { CAPITALIZE($entity) } enunciates a word of such divine power, that those who hear it weep from joy.
 # Telegnosis
 telegnosis-power-description = Создайте проекцию что бы удалённо осматривать местность.
 telegnosis-power-initialization-feedback =
@@ -64,14 +86,68 @@ psionic-language-power-metapsionic-feedback = Ноöсфера свободно 
 # Psychognomy
 psychognomy-power-description = У вас есть некоторое смутное представление о форме источника телепатических сообщений.
 psychognomy-power-initialization-feedback =
-    Я пробил завесу и знаю, что я не одинок. Что еще более важно, сделанное мной отверстие, кажется,  неопвсе еще проницаемо наределенный срок.
+    Я пробил завесу и знаю, что я не одинок. Что еще более важно, сделанное мной отверстие, кажется, вовсе еще проницаемо определенный срок.
     Когда энергия проходит через отверстия в ноосфере, я получаю слабое представление о материальном происхождении.
 # Telepathy
 telepathy-power-description = Вы способны как отправлять, так и получать телепатические сообщения.
+# Shadeskip
+action-name-shadeskip = Сквозь Тени
+action-description-shadeskip = Взывайте к Повелителю Конца Времён и молите его о частичке истинной энтропии.
+shadeskip-power-description = { action-description-shadeskip }
+shadeskip-power-initialization-feedback =
+    Я обнаружил, что стою на холодной земле, под небом, лишенным звездного света. Холод - это пустота в Конце Времён.
+    Я смотрю на бледно-голубой горизонт внутри голубого горизонта и вижу огромное Око, стоящее в центре всего этого, черное и пустое, как самые глубокие уголки космоса.
+    Моя душа начинает увядать под его Взглядом, и я ловлю себя на том, что умоляю его отвести Взгляд. Око смеется, он требует, чтобы я служил ему или умер.
+    Зная, что у меня нет выбора, я даю себе слово сделать это и внезапно возвращаюсь в материальный мир. Око всё еще смотрит мне за спину.
+shadeskip-power-metapsionic-feedback = { CAPITALIZE($entity) } претендуют на силы Владыки Конца Времён.
+shadeskip-overcharge-feedback = Мое тело содрогается от шока, поскольку оно ошеломлено чистой силой, проходящей через меня.
+# Telekinetic Pulse
+action-name-telekinetic-pulse = Телекинетический импульс
+action-description-telekinetic-pulse = Заставь всех вокруг тебя отлететь.
+telekinetic-pulse-power-description = { action-description-telekinetic-pulse }
+telekinetic-pulse-power-initialization-feedback = Когда я проникаю сквозь завесу своей психики, я обнаруживаю источник чистой кинетической энергии. Она течет сквозь меня, но, похоже, мне не хватает контроля над ней.
+telekinetic-pulse-power-metapsionic-feedback = { CAPITALIZE($entity) } обладает сущностью чистого кинезиса, протекающего через него.
+# Pyrokinetic Flare
+action-name-pyrokinetic-flare = Пирокинетическая вспышка
+action-description-pyrokinetic-flare = Создайте вспышку огненного света из Геенны, чтобы ослепить своих противников.
+pyrokinetic-flare-power-description = { action-description-pyrokinetic-flare }
+pyrokinetic-flare-power-initialization-feedback =
+    Мой взгляд на мгновение наполняется вспышкой огромного света и головокружения, и на мгновение я вижу проблеск царства
+    огня и боли, голода и страданий. Как только я замечаю это, видение исчезает. Но воспоминание об этой вспышке остается в моем сознании.
+    Я до сих пор помню это - проблеск пламени Геенна.
+pyrokinetic-flare-power-metapsionic-feedback = Это даже не имеет значения, потому что никто не может прочитать эту строчку в игре, и я не знаю, верну ли я когда-нибудь "Узкий пульс".
+# Summon Imp
+action-name-summon-imp = Призыв Импа
+action-description-summon-imp = Призовите и свяжите с собой Импа из Геенны, который станет вашим фамильяром.
+summon-imp-power-description = { action-description-summon-imp }
+summon-imp-power-initialization-feedback =
+    На короткое время я обнаружил, что блуждаю по почерневшим полям Геенны. Я перебираю пепел и нахожу тлеющий уголек в форме глаза.
+    Я подышал на него, и оно вспыхнуло пламенем. Прежде чем я вернулся, существо поблагодарило меня и назвало свое имя.
+# Summon Remilia
+action-name-summon-remilia = Призыв Ремилии
+action-description-summon-remilia = Призови свою вечно преданную фамильярку Ремилию.
+summon-remilia-power-description = { action-description-summon-remilia }
 telepathy-power-initialization-feedback =
     Голоса, которые я слышал всю свою жизнь, начинают звучать отчетливее, но они не покидают меня. Раньше они были похожи на бессвязный шепот,
     теперь мои чувства обострились, и я прихожу к осознанию того, что они являются частью общей галлюцинации. За каждым голосом скрывается мерцающее сознание.
 mindbreaking-feedback = Свет жизни исчезает из глаз { CAPITALIZE($entity) }, оставляя после себя шелуху, претендующую на разумность
+hard-mindbreaking-feedback = Your character's personhood has been obliterated. If you wish to continue playing, consider respawning as a new character.
 examine-mindbroken-message =
     Немигающие глаза, устремленные куда-то вдаль. { CAPITALIZE($entity) } это мешок мяса, притворяющийся, что у него есть душа.
     За его взглядом нет ничего, там нельзя найти никаких свидетельств божественного света.
+entity-anomaly-no-grid = Нет места для вызова существа.
+power-overwhelming-power-feedback = { CAPITALIZE($entity) } обладает прямым подключением к ноосфере.
+# Shadowkin ShadeSkip
+action-description-shadowkin-shadeskip = Арарамрра!
+# DarkSwap
+action-name-darkswap = Размах Тьмы
+action-description-darkswap = Ммра Мамм!
+darkswap-power-initialization-feedback = For a short moment, I find myself able to break the realms. Phasing in the shadows and the dark, ready to travel to the darkest of places...
+ethereal-pickup-fail = Мою рука обжигает, когда она проходит сквозь объект....
+# Psionic Familiar System
+psionic-familiar-cant-attack-master = Я связан своим Хозяином, я не могу причинить ему вреда.
+psionic-familiar-despawn-text = { CAPITALIZE($entity) } возвращается туда, откуда пришёл!
+ghost-role-information-familiar-name = Псионический Фамильяр
+ghost-role-information-familiar-description = Межпространственное существо, подчиненное воле псиона.
+ghost-role-information-familiar-rules = Повинуйся тому, кто призвал тебя. Не действуй вопреки интересам своего Господина. Ты умрешь за своего Господина, если это будет необходимо.
+psionic-roll-failed = На мгновение мое сознание расширяется, но я чувствую, что этого недостаточно.

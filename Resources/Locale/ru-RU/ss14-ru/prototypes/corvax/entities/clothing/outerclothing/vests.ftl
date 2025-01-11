@@ -1,6 +1,6 @@
-ent-ClothingOuterVestArmorSec = бронежилет
+ent-ClothingOuterVestArmorSec = Бронежилет
     .desc = Тонкий бронежилет Типа I, обеспечивающий достойную защиту от большинства видов повреждений.
-ent-ClothingOuterVestArmorMedSec = бронежилет медицинского офицера
-    .desc = Бронированный жилет медицинского офицера, с карманами для мелочёвки.
-ent-ClothingOuterVestSecurityMedic = жилет медицинского офицера
-    .desc = Лёгкий жилет, который носят медицинского офицера.
+ent-ClothingOuterVestArmorMedSec = Бронежилет полевого врача
+    .desc = Бронированный жилет полевого врача, с карманами для мелочёвки.
+ent-ClothingOuterVestSecurityMedic = Жилет полевого врача
+    .desc = Лёгкий жилет, который носят полевого врача.

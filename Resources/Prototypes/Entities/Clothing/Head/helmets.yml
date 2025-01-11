@@ -22,6 +22,7 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+    - LPPHelmet
 
 #Mercenary Helmet
 - type: entity
@@ -37,15 +38,60 @@
 
 #SWAT Helmet
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, ClothingHeadEVAHelmetBase]
   id: ClothingHeadHelmetSwat
   name: SWAT helmet
   description: An extremely robust helmet, commonly used by paramilitary forces. This one has the Nanotrasen logo emblazoned on the top.
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/swat.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: true
   - type: Clothing
     sprite: Clothing/Head/Helmets/swat.rsi
+    equippedPrefix: open
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+        Radiation: 0.8
+        Caustic: 0.9
+  - type: Item
+    heldPrefix: open
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+  - type: Foldable
+    folded: true
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+
+#Syndicate SWAT Helmet
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetSwatSyndicate
+  name: SWAT helmet
+  suffix: Syndicate
+  description: An extremely robust helmet, commonly used by paramilitary forces. It is adorned in a nefarious red and black stripe pattern.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/swat_syndicate.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/swat_syndicate.rsi
   - type: Armor #This is intentionally not spaceproof, when the time comes to port the values from SS13 this should be buffed from what it was.
     modifiers:
       coefficients:
@@ -57,19 +103,6 @@
         Caustic: 0.95
   - type: ExplosionResistance
     damageCoefficient: 0.75
-
-#Syndicate SWAT Helmet
-- type: entity
-  parent: ClothingHeadHelmetSwat
-  id: ClothingHeadHelmetSwatSyndicate
-  name: SWAT helmet
-  suffix: Syndicate
-  description: An extremely robust helmet, commonly used by paramilitary forces. It is adorned in a nefarious red and black stripe pattern.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Helmets/swat_syndicate.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Helmets/swat_syndicate.rsi
 
 #Light Riot Helmet
 - type: entity
@@ -110,6 +143,10 @@
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
 
 #Janitorial Bombsuit Helmet
 - type: entity
@@ -157,10 +194,13 @@
     sprite: Clothing/Head/Helmets/spaceninja.rsi
   - type: Tag
     tags:
-    - HidesHair
     - WhitelistChameleon
   - type: IngestionBlocker
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
 
 #Templar Helmet
 - type: entity
@@ -217,11 +257,16 @@
   - type: IngestionBlocker
   - type: TemperatureProtection
     coefficient: 0.005
+  - type: FireProtection
+    reduction: 0.15 # not fully sealed so less protection
   - type: IdentityBlocker
   - type: Tag
     tags:
-    - HidesHair
     - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
 
 #Atmos Fire Helmet
 - type: entity
@@ -238,14 +283,19 @@
   - type: IngestionBlocker
   - type: TemperatureProtection
     coefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
   - type: PressureProtection
     highPressureMultiplier: 0.25
     lowPressureMultiplier: 1000
   - type: IdentityBlocker
   - type: Tag
     tags:
-    - HidesHair
     - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
 
 #Chitinous Helmet
 - type: entity

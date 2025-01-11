@@ -160,3 +160,43 @@
 
 - type: Tag
   id: CoatRack # Вешалка
+
+- type: Tag
+  id: LPPProcessedDiamond
+
+- type: Tag
+  id: LPPCandy #Halloween
+
+# [Тэги экипировки]
+
+- type: Tag
+  id: LPPArmband  # Нарукавная повязка
+
+# Аплинки
+
+- type: Tag
+  id: LPPERTUplink
+
+- type: Tag
+  id: LPPCBURNUplink
+
+- type: Tag
+  id: LPPDeltaUplink
+
+- type: Tag
+  id: LPPHOSUplink
+
+- type: Tag
+  id: LPPStoreContract
+
+- type: Tag
+  id: LPPStoreCybersunUplinks
+
+- type: Tag
+  id: LPPStoreDonkUplinks
+
+- type: Tag
+  id: LPPStoreGorlexUplinks
+
+- type: Tag
+  id: StoreUplink

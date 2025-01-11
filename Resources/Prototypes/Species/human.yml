@@ -7,6 +7,12 @@
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
   skinColoration: HumanToned
+  minHeight: 0.8
+  defaultHeight: 1
+  maxHeight: 1.25
+  minWidth: 0.7
+  defaultWidth: 1
+  maxWidth: 1.25
 
 # The lack of a layer means that
 # this person cannot have round-start anything
@@ -18,6 +24,7 @@
   id: MobHumanSprites
   sprites:
     Head: MobHumanHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -38,6 +45,9 @@
 - type: markingPoints
   id: MobHumanMarkingLimits
   points:
+    Face:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false
@@ -51,16 +61,37 @@
       points: 1
       required: false
     HeadTop: # the cat ear joke
+      points: 3
+      required: false
+    HeadSide:
       points: 1
       required: false
     Chest:
       points: 1
       required: false
-    Legs:
-      points: 4
+    RightLeg:
+      points: 2
       required: false
-    Arms:
-      points: 4
+    RightFoot:
+      points: 2
+      required: false
+    LeftLeg:
+      points: 2
+      required: false
+    LeftFoot:
+      points: 2
+      required: false
+    RightArm:
+      points: 2
+      required: false
+    RightHand:
+      points: 3
+      required: false
+    LeftArm:
+      points: 2
+      required: false
+    LeftHand:
+      points: 3
       required: false
 
 - type: humanoidBaseSprite

@@ -1,9 +1,11 @@
 - type: job
-  id: LPPSecurityEnginer
+  id: LPPSecurityEngineer
   name: job-name-security-enginer
   description: job-description-security-enginer
   playTimeTracker: LPPJobSecurityEnginer
   requirements:
+    - !type:CharacterHeightRequirement
+      min: 160
     - !type:CharacterDepartmentTimeRequirement
       department: Security
       min: 36000
@@ -20,6 +22,7 @@
   - Maintenance
   - External
   - Engineering
+  - Atmospherics
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -27,20 +30,18 @@
 - type: startingGear
   id: LPPSecurityEngineerGear
   equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecEngineer
+    back: LPPClothingBackpackSecurityEngineer
     shoes: LPPClothingShoesBootsJackSecEnginer
     eyes: LPPClothingEyesHudSecEng
-    gloves: ClothingHandsGlovesColorYellow
-    head: ClothingHeadHatHardhatYellow
-    id: LPPSecurityEnginerPDA
-    outerClothing: ClothingOuterVestHazard
+    # gloves: ClothingHandsGlovesCombat
+    id: LPPSecurityEngineerPDA
     ears: LPPClothingHeadsetSecurityEngineer
     belt: LPPClothingMilitaryWebbingSecEng
     socks: LPPClothingUnderSocksNorm
     underwear: LPPBoxer
   underwear: LPPBriefs
   breast: LPPBraAltWhite
-  storage:
-    back:
-    - SheetSteel10
-    - SheetGlass10
-    - LPPC4Low
+  innerClothingSkirt: LPPClothingUniformJumpSkirtSecEngineer
+  satchel: LPPClothingSatchelSecurityEngineer
+  duffelbag: LPPClothingBackpackDuffelSecurityEngineer

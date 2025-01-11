@@ -2,7 +2,7 @@
   save: false
   name: Tajaran McHands
   parent: BaseMobSpeciesOrganic
-  id: BaseMobTajaran
+  id: LPPBaseMobTajaran
   abstract: true
   components:
     - type: HumanoidAppearance
@@ -12,15 +12,11 @@
       requiredLegs: 2
     - type: Vocal
       sounds:
-        Male: MaleTajaran
-        Female: FemaleTajaran
-        Unsexed: FemaleTajaran
+        Male: MaleFelinid
+        Female: FemaleFelinid
+        Unsexed: FemaleFelinid
     - type: Carriable
-    - type: Hunger
-      starvationDamage:
-        types:
-          Cold: 0.5
-          Bloodloss: 0.5
+    - type: Hunger  # tajaran are already at a disadvantage against the vulpkanin, so the baseDecayRate is unchanged
     - type: Thirst
     - type: Icon
       sprite: _LostParadise/Mobs/Species/Tajaran/parts.rsi
@@ -56,22 +52,20 @@
       speechVerb: Tajaran
     - type: Inventory
       speciesId: tajaran
-    # - type: EmotePanel
-      # race: Tajar
     - type: LanguageKnowledge
       speaks:
-      - GalacticCommon
+      - TauCetiBasic
       - LPPSikTaj
       understands:
-      - GalacticCommon
+      - TauCetiBasic
       - LPPSikTaj
 
 - type: entity
   save: false
   name: Tajaran McHands
   parent: MobHumanDummy
-  id: MobTajaranDummy
-  noSpawn: true
+  id: LPPMobTajaranDummy
+  categories: [ HideSpawnMenu ]
   description: A dummy tajaran meant to be used in character setup.
   components:
     - type: HumanoidAppearance

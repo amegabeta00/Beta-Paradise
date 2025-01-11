@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: LPPClothingNeckShemagGreen
-  name: зелёный шемаг
-  description: тёплая шёлковая ткань, защищающая от пыли и холода, а так же придающая брутальности и тактикульности носителю.
+  name: Green shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/greendown.rsi
@@ -10,6 +10,8 @@
     sprite: _LostParadise/Clothing/Neck/shemags/greendown.rsi
   - type: ToggleableClothing
     clothingPrototype: LPPClothingMaskShemagGreen
+    requiredSlot:
+    - neck
     slot: mask
   - type: ContainerContainer
     containers:
@@ -20,19 +22,20 @@
 - type: entity
   parent: ClothingMaskBase
   id: LPPClothingMaskShemagGreen
-  noSpawn: true
-  name: зелёный шемаг
+  categories: [ HideSpawnMenu ]
+  name: Green shemag
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/greenup.rsi
   - type: Clothing
     sprite: _LostParadise/Clothing/Neck/shemags/greenup.rsi
+  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingNeckBase
   id: LPPClothingNeckShemagRed
-  name: красный шемаг
-  description: тёплая шёлковая ткань, защищающая от пыли и холода, а так же придающая брутальности и тактикульности носителю.
+  name: Red shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/reddown.rsi
@@ -40,6 +43,8 @@
     sprite: _LostParadise/Clothing/Neck/shemags/reddown.rsi
   - type: ToggleableClothing
     clothingPrototype: LPPClothingMaskShemagRed
+    requiredSlot:
+    - neck
     slot: mask
   - type: ContainerContainer
     containers:
@@ -50,19 +55,20 @@
 - type: entity
   parent: ClothingMaskBase
   id: LPPClothingMaskShemagRed
-  noSpawn: true
-  name: красный шемаг
+  categories: [ HideSpawnMenu ]
+  name: Red shemag
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/redup.rsi
   - type: Clothing
     sprite: _LostParadise/Clothing/Neck/shemags/redup.rsi
+  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingNeckBase
   id: LPPClothingNeckShemagBlue
-  name: синий шемаг
-  description: тёплая шёлковая ткань, защищающая от пыли и холода, а так же придающая брутальности и тактикульности носителю.
+  name: Blue shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/bluedown.rsi
@@ -70,6 +76,8 @@
     sprite: _LostParadise/Clothing/Neck/shemags/bluedown.rsi
   - type: ToggleableClothing
     clothingPrototype: LPPClothingMaskShemagBlue
+    requiredSlot:
+    - neck
     slot: mask
   - type: ContainerContainer
     containers:
@@ -80,19 +88,20 @@
 - type: entity
   parent: ClothingMaskBase
   id: LPPClothingMaskShemagBlue
-  noSpawn: true
-  name: синий шемаг
+  categories: [ HideSpawnMenu ]
+  name: Blue shemag
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/blueup.rsi
   - type: Clothing
     sprite: _LostParadise/Clothing/Neck/shemags/blueup.rsi
+  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingNeckBase
   id: LPPClothingNeckShemagBrown
-  name: коричневый шемаг
-  description: тёплая шёлковая ткань, защищающая от пыли и холода, а так же придающая брутальности и тактикульности носителю.
+  name: Brown shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/browndown.rsi
@@ -100,6 +109,8 @@
     sprite: _LostParadise/Clothing/Neck/shemags/browndown.rsi
   - type: ToggleableClothing
     clothingPrototype: LPPClothingMaskShemagBrown
+    requiredSlot:
+    - neck
     slot: mask
   - type: ContainerContainer
     containers:
@@ -110,19 +121,20 @@
 - type: entity
   parent: ClothingMaskBase
   id: LPPClothingMaskShemagBrown
-  noSpawn: true
-  name: коричневый шемаг
+  categories: [ HideSpawnMenu ]
+  name: Brown shemag
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/brownup.rsi
   - type: Clothing
     sprite: _LostParadise/Clothing/Neck/shemags/brownup.rsi
+  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingNeckBase
   id: LPPClothingNeckShemagPurple
-  name: фиолетовый шемаг
-  description: тёплая шёлковая ткань, защищающая от пыли и холода, а так же придающая брутальности и тактикульности носителю.
+  name: Purple shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/purpledown.rsi
@@ -130,6 +142,8 @@
     sprite: _LostParadise/Clothing/Neck/shemags/purpledown.rsi
   - type: ToggleableClothing
     clothingPrototype: LPPClothingMaskShemagPurple
+    requiredSlot:
+    - neck
     slot: mask
   - type: ContainerContainer
     containers:
@@ -140,19 +154,20 @@
 - type: entity
   parent: ClothingMaskBase
   id: LPPClothingMaskShemagPurple
-  noSpawn: true
-  name: фиолетовый шемаг
+  categories: [ HideSpawnMenu ]
+  name: Purple shemag
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/purpleup.rsi
   - type: Clothing
     sprite: _LostParadise/Clothing/Neck/shemags/purpleup.rsi
+  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingNeckBase
   id: LPPClothingNeckShemagNPZ
-  name: урбан шемаг
-  description: тёплая шёлковая ткань, защищающая от пыли и холода, а так же придающая брутальности и тактикульности носителю. Теперь в цветах НПЗ!
+  name: NPZ shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer. Now with the colors of NPZ!
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/NPZdown.rsi
@@ -160,6 +175,8 @@
     sprite: _LostParadise/Clothing/Neck/shemags/NPZdown.rsi
   - type: ToggleableClothing
     clothingPrototype: LPPClothingMaskShemagNPZ
+    requiredSlot:
+    - neck
     slot: mask
   - type: ContainerContainer
     containers:
@@ -170,10 +187,44 @@
 - type: entity
   parent: ClothingMaskBase
   id: LPPClothingMaskShemagNPZ
-  noSpawn: true
-  name: урбан шемаг
+  categories: [ HideSpawnMenu ]
+  name: NPZ shemag
   components:
   - type: Sprite
     sprite: _LostParadise/Clothing/Neck/shemags/NPZup.rsi
   - type: Clothing
     sprite: _LostParadise/Clothing/Neck/shemags/NPZup.rsi
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckShemagWhite
+  name: White shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
+  components:
+  - type: Sprite
+    sprite: _LostParadise/Clothing/Neck/shemags/whitedown.rsi
+  - type: Clothing
+    sprite: _LostParadise/Clothing/Neck/shemags/whitedown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingMaskShemagWhite
+    requiredSlot:
+    - neck
+    slot: mask
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingMaskShemagWhite
+  categories: [ HideSpawnMenu ]
+  name: White shemag
+  components:
+  - type: Sprite
+    sprite: _LostParadise/Clothing/Neck/shemags/whiteup.rsi
+  - type: Clothing
+    sprite: _LostParadise/Clothing/Neck/shemags/whiteup.rsi
+  - type: IdentityBlocker

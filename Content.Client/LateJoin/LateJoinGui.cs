@@ -2,15 +2,14 @@ using System.Linq;
 using System.Numerics;
 using Content.Client.CrewManifest;
 using Content.Client.GameTicking.Managers;
+using Content.Client.Lobby;
 using Content.Client.UserInterface.Controls;
 using Content.Client.Players.PlayTimeTracking;
-using Content.Client.Preferences;
 using Content.Shared.CCVar;
 using Content.Shared.Customization.Systems;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.StatusIcon;
-using Microsoft.Win32.SafeHandles;
 using Robust.Client.Console;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
@@ -20,11 +19,17 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
+using Robust.Shared.Player;
+using Robust.Client.Player;
+#if LPP_Sponsors
+using Content.Client._LostParadise.Sponsors;
+#endif
 
 namespace Content.Client.LateJoin
 {
     public sealed class LateJoinGui : DefaultWindow
     {
+        [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
         [Dependency] private readonly IConfigurationManager _configManager = default!;
@@ -85,6 +90,14 @@ namespace Content.Client.LateJoin
             _jobLists.Clear();
             _jobButtons.Clear();
             _jobCategories.Clear();
+
+#if LPP_Sponsors
+            var sys = IoCManager.Resolve<SponsorsManager>();
+            var sponsorTier = 0;
+            if (sys.TryGetInfo(out var sponsorInfo))
+                sponsorTier = sponsorInfo.Tier;
+            var uuid = _playerManager.LocalUser != null ? _playerManager.LocalUser.ToString() ?? "" : "";
+#endif
 
             if (!_gameTicker.DisallowedLateJoin && _gameTicker.StationNames.Count == 0)
                 Logger.Warning("No stations exist, nothing to display in late-join GUI");
@@ -252,7 +265,7 @@ namespace Content.Client.LateJoin
                             VerticalAlignment = VAlignment.Center
                         };
 
-                        var jobIcon = _prototypeManager.Index<StatusIconPrototype>(prototype.Icon);
+                        var jobIcon = _prototypeManager.Index(prototype.Icon);
                         icon.Texture = _sprites.Frame0(jobIcon.Icon);
                         jobSelector.AddChild(icon);
 
@@ -262,7 +275,24 @@ namespace Content.Client.LateJoin
 
                         jobButton.OnPressed += _ => SelectedId.Invoke((id, jobButton.JobId));
 
-                        if (!_characterRequirements.CheckRequirementsValid(
+                        if (!_jobRequirements.CheckJobWhitelist(prototype, out var reason))
+                        {
+                            jobButton.Disabled = true;
+
+                            var tooltip = new Tooltip();
+                            tooltip.SetMessage(reason);
+                            jobButton.TooltipSupplier = _ => tooltip;
+
+                            jobSelector.AddChild(new TextureRect
+                            {
+                                TextureScale = new Vector2(0.4f, 0.4f),
+                                Stretch = TextureRect.StretchMode.KeepCentered,
+                                Texture = _sprites.Frame0(new SpriteSpecifier.Texture(new ("/Textures/Interface/Nano/lock.svg.192dpi.png"))),
+                                HorizontalExpand = true,
+                                HorizontalAlignment = HAlignment.Right,
+                            });
+                        }
+                        else if (!_characterRequirements.CheckRequirementsValid(
                                 prototype.Requirements ?? new(),
                                 prototype,
                                 (HumanoidCharacterProfile) (_prefs.Preferences?.SelectedCharacter
@@ -273,7 +303,11 @@ namespace Content.Client.LateJoin
                                 _entityManager,
                                 _prototypeManager,
                                 _configManager,
-                                out var reasons))
+                                out var reasons
+#if LPP_Sponsors
+                                , 0, sponsorTier, uuid
+#endif
+                                ))
                         {
                             jobButton.Disabled = true;
 
